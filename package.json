@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mywebc/vueComponents/issues"
   },
-  "homepage": "https://github.com/mywebc/vueComponents#readme"
+  "homepage": "https://github.com/mywebc/vueComponents#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
 }
