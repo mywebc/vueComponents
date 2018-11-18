@@ -21,5 +21,11 @@
   "homepage": "https://github.com/mywebc/vueComponents#readme",
   "dependencies": {
     "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }
