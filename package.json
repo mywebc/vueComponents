@@ -1,0 +1,22 @@
+{
+  "name": "vuecomponents",
+  "version": "1.0.0",
+  "description": "vueUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mywebc/vueComponents.git"
+  },
+  "keywords": [
+    "vueUI"
+  ],
+  "author": "陈晓拉尼",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mywebc/vueComponents/issues"
+  },
+  "homepage": "https://github.com/mywebc/vueComponents#readme"
+}
