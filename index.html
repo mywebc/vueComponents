@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vueUI</title>
     <style>
-        * {margin: 0; padding: 0; box-sizing: border-box}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
         /*原生定义CSS变量*/
         :root {
             --button-height: 32px;
@@ -19,20 +24,33 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
         #app {
             margin: 20px;
         }
+
         body {
-            font-size: var(--font-size);
+        font-size: var(--font-size);
         }
     </style>
     <style>
-        .icon {width: 1em; height: 1em;}
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-button><svg class="icon"><use xlink:href="#i-settings"></use></svg>按钮</g-button>
+    <g-button icon="settings">
+        按钮
+    </g-button>
+    <g-button icon="settings" icon-position="right">
+        按钮
+    </g-button>
+    <g-button>
+        按钮
+    </g-button>
 </div>
 
 <script src="./src/app.js"></script>
