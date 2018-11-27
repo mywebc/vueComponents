@@ -62,19 +62,19 @@
             outline: none;
         }
         > .content {
-            order: 1
+            order: 2
         }
         > .icon {
-            order: 2;
+            order: 1;
             margin-right: .3em
         }
 
         &.icon-right {
             > .content {
-                order: 2
+                order: 1
             }
             > .icon {
-                order: 1;
+                order: 2;
                 margin-right: 0;
                 margin-left: .3em
             }
