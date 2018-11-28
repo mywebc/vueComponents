@@ -30,7 +30,7 @@
         }
 
         body {
-        font-size: var(--font-size);
+            font-size: var(--font-size);
         }
     </style>
     <style>
@@ -42,7 +42,7 @@
 </head>
 <body>
 <div id="app">
-    <g-button  :loading="loading1" @click="loading1 = !loading1">
+    <g-button :loading="loading1" @click="loading1 = !loading1">
         按钮
     </g-button>
 
@@ -55,7 +55,9 @@
     </g-button>
 
     <g-button-group>
-        <g-button icon="left">上一页</g-button>
+        <div>
+            <g-button icon="left">上一页</g-button>
+        </div>
         <g-button>更多</g-button>
         <g-button icon="right" icon-position="right">下一页</g-button>
     </g-button-group>
