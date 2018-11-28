@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.3.0",
+    "chai": "^4.2.0",
     "parcel-bundler": "^1.10.3",
     "sass": "^1.15.1",
     "vue-template-compiler": "^2.5.17"
