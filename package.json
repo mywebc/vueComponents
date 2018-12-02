@@ -4,7 +4,9 @@
   "description": "vueUI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -27,8 +29,17 @@
     "@vue/component-compiler-utils": "^2.3.0",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
+    "karma": "^3.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^5.2.0",
     "parcel-bundler": "^1.10.3",
     "sass": "^1.15.1",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.3.0",
     "vue-template-compiler": "^2.5.17"
   },
   "alias": {
