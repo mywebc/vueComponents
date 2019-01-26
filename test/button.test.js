@@ -11,12 +11,14 @@ describe('Button', () => {
     })
     it('可以设置icon.', () => {
         const Constructor = Vue.extend(Button)
+        // 给它传一个数据
         const vm = new Constructor({
             propsData: {
                 icon: 'settings'
             }
         }).$mount()
         const useElement = vm.$el.querySelector('use')
+        // 查看这个属性，期待它等于这个值
         expect(useElement.getAttribute('xlink:href')).to.equal('#i-settings')
         vm.$destroy()
     })
@@ -69,10 +71,11 @@ describe('Button', () => {
                 icon: 'settings',
             }
         }).$mount()
-
         const callback = sinon.fake();
         vm.$on('click', callback)
+        // 找到这个元素，调用它的点击事件
         vm.$el.click()
+        // 期待回调
         expect(callback).to.have.been.called
     })
 })
