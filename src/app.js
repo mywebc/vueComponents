@@ -107,4 +107,6 @@ try {
         // 期待这个函数被调用
         expect(spy).to.have.been.called()
     }
+} catch (e) {
+    
 }
