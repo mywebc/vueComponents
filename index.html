@@ -64,32 +64,62 @@
     <g-input value="学习" readonly></g-input>
     <g-input value="学习" error="姓名不能少于两个字"></g-input>
     <!--网格系统-->
-    <g-row >
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-    </g-row>
+    <!--<g-row >-->
+        <!--<g-col>1</g-col>-->
+        <!--<g-col>2</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row>-->
+        <!--<g-col>1</g-col>-->
+        <!--<g-col>2</g-col>-->
+        <!--<g-col>3</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row>-->
+        <!--<g-col>1</g-col>-->
+        <!--<g-col>2</g-col>-->
+        <!--<g-col>3</g-col>-->
+        <!--<g-col>4</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row gutter="10">-->
+        <!--<g-col span="2">1</g-col>-->
+        <!--<g-col span="22" >2</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row gutter="10" align="right">-->
+        <!--<g-col span="2">1</g-col>-->
+        <!--<g-col span="22" >2</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row gutter="10" align="left">-->
+        <!--<g-col span="2">1</g-col>-->
+        <!--<g-col span="22" >2</g-col>-->
+    <!--</g-row>-->
+    <!--<g-row>-->
+        <!--<g-col span="8">-->
+            <!--<g-row align="left">-->
+                <!--<g-col>1</g-col>-->
+                <!--<g-col>2</g-col>-->
+                <!--<g-col>3</g-col>-->
+            <!--</g-row>-->
+        <!--</g-col>-->
+        <!--<g-col span="16">-->
+            <!--<g-row align="right">-->
+                <!--<g-col>1</g-col>-->
+                <!--<g-col>2</g-col>-->
+                <!--<g-col>3</g-col>-->
+            <!--</g-row>-->
+        <!--</g-col>-->
+    <!--</g-row>-->
     <g-row>
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-        <g-col>3</g-col>
-    </g-row>
-    <g-row>
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-        <g-col>3</g-col>
-        <g-col>4</g-col>
-    </g-row>
-    <g-row gutter="10">
-        <g-col span="2">1</g-col>
-        <g-col span="22" >2</g-col>
-    </g-row>
-    <g-row gutter="10" align="right">
-        <g-col span="2">1</g-col>
-        <g-col span="22" >2</g-col>
-    </g-row>
-    <g-row gutter="10" align="left">
-        <g-col span="2">1</g-col>
-        <g-col span="22" >2</g-col>
+        <g-col span="24"
+               :ipad="{span:8}"
+               :narrow-pc="{span:6}"
+               :pc="{span:4}"
+               :wide-pc="{span:2}"
+        >1</g-col>
+        <g-col span="24"
+               :ipad="{span:16}"
+               :narrow-pc="{span:18}"
+               :pc="{span:20}"
+               :wide-pc="{span:22}"
+        >2</g-col>
     </g-row>
 </div>
 
