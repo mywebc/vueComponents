@@ -36,7 +36,8 @@ new Vue({
     },
     methods: {
         showToast() {
-            this.$toast('这是一条消息', {
+            this.$toast('加油', {
+                enableHtml: true
             })
         }
     }
