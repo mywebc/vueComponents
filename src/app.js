@@ -37,7 +37,9 @@ new Vue({
     methods: {
         showToast() {
             this.$toast('加油', {
-                enableHtml: true
+                enableHtml: true,
+                position: 'middle',
+                autoClose: false
             })
         }
     }
