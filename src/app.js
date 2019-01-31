@@ -35,10 +35,24 @@ new Vue({
         loading3: false,
     },
     methods: {
-        showToast() {
+        showToast1() {
+            this.$toast('加油', {
+                enableHtml: true,
+                position: 'top',
+                autoClose: false
+            })
+        },
+        showToast2() {
             this.$toast('加油', {
                 enableHtml: true,
                 position: 'middle',
+                autoClose: false
+            })
+        },
+        showToast3() {
+            this.$toast('加油', {
+                enableHtml: true,
+                position: 'bottom',
                 autoClose: false
             })
         }

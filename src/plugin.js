@@ -17,8 +17,8 @@ let currentToast
 export default {
     install (Vue, options) {
         Vue.prototype.$toast = function (message, toastOptions) {
+            // 如果存在，把之前的销毁
             if (currentToast) {
-                console.log(currentToast)
                 currentToast.close()
             }
             currentToast = createToast({Vue, message, propsData: toastOptions})
