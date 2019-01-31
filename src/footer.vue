@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: "footer"
+        name: "GoFooter"
     }
 </script>
 

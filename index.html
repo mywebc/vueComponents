@@ -34,102 +34,12 @@
         }
     </style>
     <style>
-        .icon {
-            width: 1em;
-            height: 1em;
-        }
-        .demo {
-            min-height: 100px;
-        }
+
     </style>
 </head>
 <body>
 <div id="app">
-    <g-layout style="height: 500px">
-        <g-sider class="demo">sider</g-sider>
-        <g-layout>
-            <g-header class="demo">header</g-header>
-            <g-content class="demo">content</g-content>
-            <g-footer class="demo">footer</g-footer>
-        </g-layout>
-    </g-layout>
-    <!--<g-button :loading="loading1" @click="loading1 = !loading1">-->
-        <!--按钮-->
-    <!--</g-button>-->
-
-    <!--<g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">-->
-        <!--按钮-->
-    <!--</g-button>-->
-
-    <!--<g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">-->
-        <!--按钮-->
-    <!--</g-button>-->
-
-    <!--<g-button-group>-->
-        <!--<g-button icon="left">上一页</g-button>-->
-        <!--<g-button>更多</g-button>-->
-        <!--<g-button icon="right" icon-position="right">下一页</g-button>-->
-    <!--</g-button-group>-->
-    <!--&lt;!&ndash;输入框&ndash;&gt;-->
-    <!--<g-input value="你好" disabled></g-input>-->
-    <!--<g-input value="学习" readonly></g-input>-->
-    <!--<g-input value="学习" error="姓名不能少于两个字"></g-input>-->
-    <!--&lt;!&ndash;网格系统&ndash;&gt;-->
-    <!--<g-row >-->
-        <!--<g-col offset="12">1</g-col>-->
-        <!--<g-col>2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row>-->
-        <!--<g-col>1</g-col>-->
-        <!--<g-col>2</g-col>-->
-        <!--<g-col>3</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row>-->
-        <!--<g-col>1</g-col>-->
-        <!--<g-col>2</g-col>-->
-        <!--<g-col>3</g-col>-->
-        <!--<g-col>4</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="10">-->
-        <!--<g-col span="2">1</g-col>-->
-        <!--<g-col span="22" >2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="10" align="right">-->
-        <!--<g-col span="2">1</g-col>-->
-        <!--<g-col span="22" >2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="10" align="left">-->
-        <!--<g-col span="2">1</g-col>-->
-        <!--<g-col span="22" >2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row>-->
-        <!--<g-col span="8">-->
-            <!--<g-row align="left">-->
-                <!--<g-col>1</g-col>-->
-                <!--<g-col>2</g-col>-->
-                <!--<g-col>3</g-col>-->
-            <!--</g-row>-->
-        <!--</g-col>-->
-        <!--<g-col span="16">-->
-            <!--<g-row align="right">-->
-                <!--<g-col>1</g-col>-->
-                <!--<g-col>2</g-col>-->
-                <!--<g-col>3</g-col>-->
-            <!--</g-row>-->
-        <!--</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row>-->
-        <!--<g-col span="24"-->
-               <!--:narrow-pc="{span:6}"-->
-               <!--:pc="{span:4}"-->
-               <!--:wide-pc="{span:2}"-->
-        <!--&gt;1</g-col>-->
-        <!--<g-col span="24"-->
-               <!--:narrow-pc="{span:18}"-->
-               <!--:pc="{span:20}"-->
-               <!--:wide-pc="{span:22}"-->
-        <!--&gt;2</g-col>-->
-    <!--</g-row>-->
+    <Button @click="showToast">test</Button>
 </div>
 
 <script src="./src/app.js"></script>

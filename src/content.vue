@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: "content"
+        name: "GoContent"
     }
 </script>
 

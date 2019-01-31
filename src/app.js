@@ -11,6 +11,7 @@ import Header from './header'
 import Footer from './footer'
 import Sider from './sider'
 
+import plugin from './plugin'
 
 Vue.component('g-button', Button);
 Vue.component('g-icon', Icon);
@@ -23,6 +24,7 @@ Vue.component('g-header', Header);
 Vue.component('g-footer', Footer);
 Vue.component('g-sider', Sider);
 
+Vue.use(plugin)
 
 
 new Vue({
@@ -31,6 +33,12 @@ new Vue({
         loading1: false,
         loading2: false,
         loading3: false,
+    },
+    methods: {
+        showToast() {
+            this.$toast('这是一条消息', {
+            })
+        }
     }
 })
 

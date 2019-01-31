@@ -11,7 +11,7 @@
 <script>
     import Icon from './icon'
     export default {
-        name: 'LeButton',
+        name: 'GoButton',
         // props: ["icon","iconPosition"]
         components: {"g-icon": Icon},
         props: {

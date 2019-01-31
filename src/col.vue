@@ -18,7 +18,7 @@
         return valid
     }
     export default {
-        name: "col",
+        name: "GoCol",
         props: {
             span: {
                 type: [Number, String]

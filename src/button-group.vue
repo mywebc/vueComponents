@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: 'LeButtonGroup',
+        name: 'GoButtonGroup',
         mounted() {
             for (let node of this.$el.children) {
                 let name = node.nodeName.toLowerCase()

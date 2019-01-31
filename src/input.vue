@@ -16,7 +16,7 @@
 <script>
     import Icon from './icon'
     export default {
-        name: "LeInput",
+        name: "GoInput",
         components: {Icon},
         props: {
             value: {
