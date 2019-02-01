@@ -53,7 +53,7 @@ new Vue({
             this.$toast('加油', {
                 enableHtml: true,
                 position: 'bottom',
-                autoClose: false
+                autoClose: 2
             })
         }
     }
