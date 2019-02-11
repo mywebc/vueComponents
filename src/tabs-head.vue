@@ -1,6 +1,7 @@
 <template>
     <div class="tabs-head">
         <slot></slot>
+        <div class="line" ref="line"></div>
         <div class="actions-wrapper">
             <slot name="action"></slot>
         </div>
@@ -11,7 +12,13 @@
     export default {
         name: "GoTabsHead",
         inject: ['eventBus'],
-        created() {
+        mounted() {
+            this.eventBus.$on('update:selected', (item, vm) => {
+                let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                console.log(width, height, top, left)
+                this.$refs.line.style.width = `${width}px`
+                this.$refs.line.style.left = `${left}px`
+            })
         }
     }
 </script>

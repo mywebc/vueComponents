@@ -35,8 +35,21 @@
         },
         mounted() {
             // console.log('this.eventBus', this.eventBus)
+            if (this.$children.length === 0) {
+                console && console.warn &&
+                console.warn('tabs的子组件应该是tabs-head和tabs-nav，但你没有写子组件')
+            }
             // 选中时发送事件
-            this.eventBus.$emit("update:selected", this.name)
+            this.$children.forEach((vm) => {
+                if (vm.$options.name === 'GoTabsHead') {
+                    vm.$children.forEach((childVm) => {
+                        if (childVm.$options.name === 'GoTabsItem'
+                            && childVm.name === this.selected) {
+                            this.eventBus.$emit('update:selected', this.selected, childVm)
+                        }
+                    })
+                }
+            })
         }
     }
 </script>
