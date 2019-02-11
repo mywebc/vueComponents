@@ -6,7 +6,10 @@
 
 <script>
     export default {
-        name: "GoTabsBody"
+        name: "GoTabsBody",
+        inject: ['eventBus'],
+        created() {
+        }
     }
 </script>
 
