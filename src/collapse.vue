@@ -17,7 +17,10 @@
           single: {
               type: Boolean,
               default: false
-          }
+          },
+            selected: {
+              type: String
+            }
         },
         // 必须返回一个对象
         provide() {
@@ -26,6 +29,9 @@
                     eventBus: this.eventBus
                 }
             }
+        },
+        mounted() {
+            this.eventBus.$emit('update:selected', this.selected)
         }
     }
 </script>
