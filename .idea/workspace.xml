@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/collapse-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collapse.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,12 +36,12 @@
           <entry key="MD" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="6" />
-          <entry key="js" value="44" />
+          <entry key="js" value="45" />
           <entry key="json" value="8" />
           <entry key="map" value="1" />
           <entry key="q" value="4" />
           <entry key="ts" value="2" />
-          <entry key="vue" value="47" />
+          <entry key="vue" value="49" />
           <entry key="xml" value="1" />
           <entry key="yml" value="2" />
         </counts>
@@ -48,12 +50,12 @@
         <counts>
           <entry key="HTML" value="6" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="44" />
+          <entry key="JavaScript" value="45" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="2" />
-          <entry key="Vue.js" value="47" />
+          <entry key="Vue.js" value="49" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="2" />
         </counts>
@@ -61,21 +63,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="MD" value="265" />
-          <entry key="html" value="1240" />
-          <entry key="js" value="3580" />
+          <entry key="html" value="1261" />
+          <entry key="js" value="3630" />
           <entry key="json" value="87" />
           <entry key="txt" value="326" />
-          <entry key="vue" value="8466" />
+          <entry key="vue" value="8738" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1245" />
+          <entry key="HTML" value="1266" />
           <entry key="JSON" value="87" />
-          <entry key="JavaScript" value="3575" />
+          <entry key="JavaScript" value="3625" />
           <entry key="Markdown" value="265" />
           <entry key="PLAIN_TEXT" value="326" />
-          <entry key="Vue.js" value="8466" />
+          <entry key="Vue.js" value="8738" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -91,22 +93,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            <state relative-caret-position="-677">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/toast.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="e#28#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,13 +114,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="83">
               <caret line="69" column="27" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/popover.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1178">
+              <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+              <folding>
+                <element signature="e#28#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,25 +163,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tabs-pane.test.js">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="187">
+              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding>
-                <element signature="e#28#49#0" expanded="true" />
+                <marker date="1549963810531" expanded="true" signature="932:1588" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/src/collapse.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/collapse-item.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -192,15 +200,6 @@
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="61" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -276,9 +275,12 @@
         <option value="$PROJECT_DIR$/test/tabs-body.test.js" />
         <option value="$PROJECT_DIR$/test/tabs-head.test.js" />
         <option value="$PROJECT_DIR$/test/tabs-pane.test.js" />
-        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/popover.vue" />
+        <option value="$PROJECT_DIR$/test/popover.test.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/collapse.vue" />
+        <option value="$PROJECT_DIR$/src/collapse-item.vue" />
       </list>
     </option>
   </component>
@@ -335,7 +337,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;key&#9;ACTION&#9;ChangeKeymap&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;key&#9;ACTION&#9;ChangeKeymap&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -376,7 +378,7 @@
       <workItem from="1547886187142" duration="1302000" />
       <workItem from="1548514879661" duration="17646000" />
       <workItem from="1548584019902" duration="57301000" />
-      <workItem from="1549779923532" duration="15584000" />
+      <workItem from="1549779923532" duration="17980000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -473,7 +475,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123044000" />
+    <option name="totallyTimeSpent" value="125440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -808,10 +810,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/popover.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/popover.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        <state relative-caret-position="-677">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -820,21 +842,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1549963810531" expanded="true" signature="932:1588" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popover.vue">
+    <entry file="file://$PROJECT_DIR$/src/collapse.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collapse-item.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
