@@ -1,9 +1,9 @@
 <template>
     <div class="collapseItem">
-        <div class="title" @click="toggle">
+        <div class="title" @click="toggle" :data-name="name">
             {{title}}
         </div>
-        <div class="content" v-if="open">
+        <div class="content" ref="content" v-if="open">
             <slot></slot>
         </div>
     </div>
@@ -22,37 +22,30 @@
                 required: true
             }
         },
-        data() {
+        data () {
             return {
-                open: false
+                open: false,
             }
         },
         inject: ['eventBus'],
-        methods: {
-            toggle() {
-                if(this.open) {
+        mounted () {
+            this.eventBus && this.eventBus.$on('update:selected', (names) => {
+                if (names.indexOf(this.name) >= 0) {
+                    this.open = true
+                } else {
                     this.open = false
-                } else {
-                    this.eventBus && this.eventBus.$emit('update:selected', this.name)
-                }
-            },
-            close() {
-                this.open = false
-            },
-            show() {
-                this.open = true
-            }
-        },
-        mounted() {
-            this.eventBus && this.eventBus.$on('update:selected', (name) => {
-                // 如果不是自己
-                if(name !== this.name) {
-                    this.close()
-                } else {
-                    this.show()
                 }
             })
-        }
+        },
+        methods: {
+            toggle () {
+                if (this.open) {
+                    this.eventBus && this.eventBus.$emit('update:removeSelected', this.name)
+                } else {
+                    this.eventBus && this.eventBus.$emit('update:addSelected', this.name)
+                }
+            },
+        },
     }
 </script>
 
