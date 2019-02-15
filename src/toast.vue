@@ -100,6 +100,7 @@ $toast-bg: rgba(0, 0, 0, 0.75);
     100% {opacity: 1;}
 }
 .wrapper {
+    z-index: 999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);

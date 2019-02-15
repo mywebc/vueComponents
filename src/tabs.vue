@@ -1,5 +1,5 @@
 <template>
-    <div class="tabs">
+    <div class="tabs" :class="`position-${direction}`">
         <slot></slot>
     </div>
 </template>
@@ -50,12 +50,21 @@
                     })
                 }
             })
+            // 如果有设置方向
+            if(this.direction) {
+                this.eventBus.$emit('direction', this.direction)
+            }
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    $tab-height: 120px;
     .tabs {
-
+        &.position-vertical {
+            display: flex;
+            flex-direction: row;
+            height: $tab-height;
+        }
     }
 </style>

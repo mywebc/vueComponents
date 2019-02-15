@@ -4,17 +4,16 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: '主页', link: '/'},
-            {text: '文档', link: '/guide/'},
-            {text: '交流', link: 'https://google.com'},
+            {text: 'Github', link: 'https://github.com/mywebc/vueComponents'},
         ],
         sidebar: [
-            {
-                title: '入门',
-                children: [
-                    '/install/',
-                    '/get-started/'
-                ]
-            },
+            // {
+            //     title: '入门',
+            //     children: [
+            //         '/install/',
+            //         '/get-started/'
+            //     ]
+            // },
             {
                 title: '组件',
                 children: [

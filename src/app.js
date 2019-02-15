@@ -58,7 +58,7 @@ new Vue({
         yyy (data) {
             console.log(data)
         },
-        showToast1() {
+        showToast() {
             this.$toast('加油', {
                 enableHtml: true,
                 position: 'top',

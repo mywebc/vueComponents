@@ -1,5 +1,5 @@
 <template>
-    <div class="tabs-head">
+    <div class="tabs-head" :class="`position-${direction}`">
         <slot></slot>
         <div class="line" ref="line"></div>
         <div class="actions-wrapper">
@@ -12,6 +12,11 @@
     export default {
         name: "GoTabsHead",
         inject: ['eventBus'],
+        data() {
+            return {
+                direction: ''
+            }
+        },
         mounted() {
             this.eventBus.$on('update:selected', (item, vm) => {
                 let {width, height, top, left} = vm.$el.getBoundingClientRect()
@@ -19,6 +24,10 @@
                 // this.$refs.line.style.width = `${width}px`
                 // this.$refs.line.style.left = `${left}px`
             })
+            this.eventBus.$on('direction', (direction) => {
+                this.direction = direction
+            })
+
         }
     }
 </script>
@@ -45,6 +54,11 @@
             align-items: center;
             justify-content: center;
             padding: 0 1em;
+        }
+        &.position-vertical {
+            flex-direction: column;
+            border-bottom: 0;
+            height: $tab-height;
         }
     }
 </style>
