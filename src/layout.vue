@@ -16,7 +16,7 @@
         },
         mounted() {
             this.$children.forEach((vm) => {
-                if(vm.$options.name === 'sider') {
+                if(vm.$options.name === 'GoSider') {
                     this.layoutClass.hasSider = true
                 }
             })
@@ -29,7 +29,7 @@
         display: flex;
         flex-grow: 1;
         flex-direction: column;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         &.hasSider {
             flex-direction: row;
         }

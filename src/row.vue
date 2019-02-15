@@ -41,7 +41,7 @@
 </script>
 
 <style scoped lang="scss">
-    .row {
+    .row{
         display: flex;
         flex-wrap: wrap;
         &.align-left {

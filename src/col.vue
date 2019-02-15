@@ -90,10 +90,10 @@
 
 <style scoped lang="scss">
     .col {
-        height: 100px;
-        background: grey;
-        /*width: 50%;*/
-        border: 1px solid red;
+        /*height: 60px;*/
+        /*background: skyblue;*/
+        /*!*width: 50%;*!*/
+        /*border: 1px solid #eee;*/
 
         $class-prefix: col-;
         @for $n from 1 through 24 {
@@ -107,7 +107,6 @@
                 margin-left: ($n / 24) * 100%;
             }
         }
-
         // ipad
         @media (min-width: 577px){
             $class-prefix: col-ipad-;

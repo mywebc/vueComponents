@@ -30,6 +30,7 @@ Vue.component('g-icon', Icon);
 Vue.component('g-button-group', ButtonGroup);
 Vue.component('g-input', Input);
 Vue.component('g-row', Row);
+Vue.component('g-col', Col);
 Vue.component('g-layout', Layout);
 Vue.component('g-content', Content);
 Vue.component('g-header', Header);
@@ -51,7 +52,7 @@ Vue.component('g-collapse-item', CollapseItem)
 new Vue({
     el: '#app',
     data: {
-        selectedTab: ['2']
+        selectedTab: 'first'
     },
     methods: {
         yyy (data) {

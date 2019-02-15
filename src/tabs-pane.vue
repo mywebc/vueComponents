@@ -22,7 +22,7 @@
         },
         created() {
             // 自己也要监听
-            this.eventBus.$on('update:select', (name) => {
+            this.eventBus.$on('update:selected', (name) => {
                 this.active = name === this.name;
             })
         },
