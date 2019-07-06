@@ -45,7 +45,7 @@ methods: {
         this.$toast('这是一段手动关闭的提示', {
             autoClose: false,
             closeButton: {
-                text: '自定义关闭文字',
+                text: '关闭文字',
                 callback() {
                     console.log('关闭成功')
                 }
@@ -78,7 +78,7 @@ methods: {
                 this.$toast('这是一段手动关闭的提示', {
                     autoClose: false,
                     closeButton: {
-                        text: '自定义关闭文字',
+                        text: '关闭文字',
                         callback() {
                             console.log('关闭成功')
                         }

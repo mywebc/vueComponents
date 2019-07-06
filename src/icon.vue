@@ -1,6 +1,6 @@
 <template>
     <svg class="g-icon">
-        <use :xlink:href=`#i-${name}`></use>
+        <use :xlink:href="`#i-${name}`"></use>
     </svg>
 </template>
 
@@ -8,7 +8,10 @@
     import './svg'
     export default {
         name: 'GoIcon',
-        props: ['name']
+        props: ['name'],
+        mounted() {
+            console.log('icon-name', this.name)
+        }
     }
 </script>
 

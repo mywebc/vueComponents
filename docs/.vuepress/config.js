@@ -1,5 +1,6 @@
 module.exports = {
     title: 'GoUI',
+    base: '/vueComponents/',
     description: '一些自己写的UI组件',
     themeConfig: {
         nav: [
@@ -16,6 +17,7 @@ module.exports = {
             // },
             {
                 title: '组件',
+                collapsable: false,
                 children: [
                     '/components/button',
                     '/components/input',
