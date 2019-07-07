@@ -2,32 +2,16 @@
   <div class="cascader">
     <div class="trigger" @click="poppoverVisible = !poppoverVisible"></div>
     <div class="popover" v-if="poppoverVisible">
-      <div class="level1">
-        <div
-          class="label"
-          v-for="item1 in source"
-          @click="level1Selected = item1"
-        >
-          {{ item1.name }}
-        </div>
-      </div>
-      <div class="level2">
-        <div v-for="item2 in level1Items" @click="level2Selected = item2" class="label">
-          {{ item2.name }}
-        </div>
-      </div>
-      <div class="level3">
-        <div v-for="item3 in level2Items" class="label">{{ item3.name }}</div>
-      </div>
+        <cascader-items :items="source"></cascader-items>
     </div>
   </div>
 </template>
 
 <script>
-import CascaderItem from "./cascaderI-item";
+import CascaderItems from "./cascaderI-items";
 export default {
   name: "GoCascader",
-  components: { CascaderItem },
+  components: { CascaderItems },
   props: {
     source: {
       type: Array
@@ -36,21 +20,8 @@ export default {
   data() {
     return {
       poppoverVisible: false,
-      level1Selected: null,
-      level2Selected: null
     };
   },
-  mounted() {
-    console.log("接受到的props", this.source);
-  },
-  computed: {
-    level1Items: function() {
-      return !this.level1Selected ? [] : this.level1Selected.children;
-    },
-    level2Items: function() {
-      return !this.level2Selected ? [] : this.level2Selected.children;
-    }
-  }
 };
 </script>
 
