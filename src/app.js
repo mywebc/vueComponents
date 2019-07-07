@@ -55,10 +55,12 @@ new Vue({
         name: "江苏省",
         children: [
           {
-            name: "南通市"
+            name: "南通市",
+            children: [{ name: "开发区" }, { name: "崇川区" }]
           },
           {
-            name: "宿迁市"
+            name: "宿迁市",
+            children: [{ name: "宿迁区" }]
           }
         ]
       },
@@ -66,9 +68,13 @@ new Vue({
         name: "浙江省",
         children: [
           {
-            name: "湖州市"
+            name: "湖州市",
+            children: [{ name: "湖州区" }, { name: "湖州2区" }]
           },
-          { name: "杭州市" }
+          {
+            name: "杭州市",
+            children: [{ name: "杭州一区" }, { name: "杭州二区" }]
+          }
         ]
       }
     ]
