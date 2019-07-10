@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cascader-items.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/click-outside.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cascader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cascaderI-items.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/var.scss" afterDir="false" />
     </list>
@@ -37,16 +42,16 @@
           <entry key="MD" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="10" />
-          <entry key="js" value="70" />
-          <entry key="json" value="14" />
+          <entry key="js" value="74" />
+          <entry key="json" value="15" />
           <entry key="lock" value="1" />
           <entry key="map" value="1" />
           <entry key="md" value="43" />
           <entry key="q" value="4" />
-          <entry key="scss" value="1" />
+          <entry key="scss" value="2" />
           <entry key="sh" value="1" />
           <entry key="ts" value="3" />
-          <entry key="vue" value="128" />
+          <entry key="vue" value="132" />
           <entry key="vuepress" value="2" />
           <entry key="xml" value="1" />
           <entry key="yml" value="3" />
@@ -55,14 +60,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="10" />
-          <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="70" />
+          <entry key="JSON" value="15" />
+          <entry key="JavaScript" value="74" />
           <entry key="Markdown" value="48" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="SCSS" value="1" />
+          <entry key="SCSS" value="2" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="3" />
-          <entry key="Vue.js" value="128" />
+          <entry key="Vue.js" value="132" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="3" />
           <entry key="yarn.lock" value="1" />
@@ -75,10 +80,10 @@
           <entry key="js" value="4480" />
           <entry key="json" value="97" />
           <entry key="md" value="442" />
-          <entry key="scss" value="111" />
+          <entry key="scss" value="127" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="515" />
-          <entry key="vue" value="15500" />
+          <entry key="txt" value="562" />
+          <entry key="vue" value="15561" />
           <entry key="vuepress" value="26" />
         </counts>
       </usages-collector>
@@ -88,9 +93,9 @@
           <entry key="JSON" value="97" />
           <entry key="JavaScript" value="4475" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="547" />
-          <entry key="SCSS" value="111" />
-          <entry key="Vue.js" value="15488" />
+          <entry key="PLAIN_TEXT" value="594" />
+          <entry key="SCSS" value="127" />
+          <entry key="Vue.js" value="15549" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -104,13 +109,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
+        <entry file="file://$PROJECT_DIR$/src/cascader-items.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="8" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1259">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -118,17 +120,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cascader.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="324">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#299#329#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,54 +133,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.js">
+        <entry file="file://$PROJECT_DIR$/src/cascader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            <state relative-caret-position="1835">
+              <caret line="114" column="26" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="26" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#137#143#0" expanded="true" />
+                <element signature="e#522#567#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/babel.config.js">
+        <entry file="file://$PROJECT_DIR$/src/db.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+        <entry file="file://$PROJECT_DIR$/src/button.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/src/click-outside.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="26" />
+            <state relative-caret-position="216">
+              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/icon.vue">
+        <entry file="file://$PROJECT_DIR$/src/var.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="252">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -193,20 +189,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>svg</find>
-      <find>sinon</find>
-      <find>colClass</find>
-      <find>phone</find>
-      <find>buttom</find>
-      <find>close</find>
-      <find>includes</find>
       <find>autoCloseDelay</find>
       <find>console.log</find>
       <find>console</find>
@@ -230,6 +219,13 @@
       <find>Sider</find>
       <find>left</find>
       <find>.left</find>
+      <find>remove</find>
+      <find>db</find>
+      <find>$input-height</find>
+      <find>key</find>
+      <find>$grey</find>
+      <find>keyframe</find>
+      <find>result</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,8 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/tabs-body.test.js" />
-        <option value="$PROJECT_DIR$/test/tabs-head.test.js" />
         <option value="$PROJECT_DIR$/test/tabs-pane.test.js" />
         <option value="$PROJECT_DIR$/test/popover.test.js" />
         <option value="$PROJECT_DIR$/src/collapse-item.vue" />
@@ -280,14 +274,16 @@
         <option value="$PROJECT_DIR$/docs/.vuepress/config.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/button.vue" />
         <option value="$PROJECT_DIR$/src/input.vue" />
         <option value="$PROJECT_DIR$/src/cascaderI-item.vue" />
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/cascader.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/cascaderI-items.vue" />
+        <option value="$PROJECT_DIR$/src/click-outside.js" />
+        <option value="$PROJECT_DIR$/src/db.js" />
+        <option value="$PROJECT_DIR$/src/cascader.vue" />
         <option value="$PROJECT_DIR$/src/var.scss" />
+        <option value="$PROJECT_DIR$/src/button.vue" />
         <option value="$PROJECT_DIR$/src/demo.vue" />
       </list>
     </option>
@@ -309,10 +305,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
     <option name="width" value="980" />
-    <option name="height" value="1039" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -340,7 +334,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="commit&#9;ACTION&#9;CheckinProject&#10;demo&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/demo.vue&#10;var&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;index&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;sor&#9;ACTION&#9;linessorter.sort&#10;comm&#9;ACTION&#9;CheckinProject&#10;lines&#9;ACTION&#9;linessorter.sort&#10;inde&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;key&#9;null&#9;null&#10;pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;animation&#9;null&#9;null&#10;GuL&#9;null&#9;null&#10;coll&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/collapse-item.vue&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
+    <property name="SearchEverywhereHistoryKey" value="var&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;butt&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/button.vue&#10;va&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;commit&#9;ACTION&#9;CheckinProject&#10;demo&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/demo.vue&#10;index&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;sor&#9;ACTION&#9;linessorter.sort&#10;comm&#9;ACTION&#9;CheckinProject&#10;lines&#9;ACTION&#9;linessorter.sort&#10;inde&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;key&#9;null&#9;null&#10;animation&#9;null&#9;null&#10;GuL&#9;null&#9;null&#10;coll&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/collapse-item.vue&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -392,7 +386,7 @@
       <workItem from="1560322611271" duration="54000" />
       <workItem from="1562398028809" duration="4830000" />
       <workItem from="1562410377792" duration="18258000" />
-      <workItem from="1562568041874" duration="2570000" />
+      <workItem from="1562568041874" duration="7376000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -520,11 +514,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562498796071</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="因为scss编译过慢，将构建工具parcel改为vue-cli3">
+      <created>1562572778729</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1562572778729</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205917000" />
+    <option name="totallyTimeSpent" value="210723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +540,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21648793" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16908851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -555,11 +556,33 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3299566" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" x="12" y="472" width="1514" height="225" id="Terminal" order="12" weight="0.24602026" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="12" y="472" width="1514" height="225" id="Terminal" order="3" visible="true" weight="0.21447721" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16908851" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299566" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3299566" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3299566" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" x="12" y="472" width="1514" height="225" id="Terminal" order="12" visible="true" weight="0.24602026" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -591,7 +614,8 @@
     <MESSAGE value="渲染下拉弹出的内容" />
     <MESSAGE value="改造cascaderitems，使用递归渲染出下拉列表。" />
     <MESSAGE value="下拉列表增加可设置属性height,初步调整样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="下拉列表增加可设置属性height,初步调整样式" />
+    <MESSAGE value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
+    <option name="LAST_COMMIT_MESSAGE" value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,16 +628,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/tabs-demos.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/popover-demos.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -726,13 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
           <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -872,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/button.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabs.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -893,13 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cascaderI-items.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -920,10 +913,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="-60">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -936,44 +939,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cascader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/var.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="160">
+          <caret line="26" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/babel.config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="26" />
+        <state relative-caret-position="210">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/var.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/button.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/click-outside.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cascader-items.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1259">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cascader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1835">
+          <caret line="114" column="26" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="26" />
+          <folding>
+            <element signature="e#137#143#0" expanded="true" />
+            <element signature="e#522#567#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="324">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#299#329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
