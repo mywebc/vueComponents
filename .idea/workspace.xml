@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +37,8 @@
           <entry key="html" value="10" />
           <entry key="js" value="79" />
           <entry key="json" value="16" />
-          <entry key="lock" value="1" />
+          <entry key="lock" value="3" />
+          <entry key="log" value="1" />
           <entry key="map" value="1" />
           <entry key="md" value="43" />
           <entry key="q" value="4" />
@@ -54,14 +57,14 @@
           <entry key="JSON" value="16" />
           <entry key="JavaScript" value="79" />
           <entry key="Markdown" value="48" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="2" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="4" />
           <entry key="Vue.js" value="133" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="3" />
-          <entry key="yarn.lock" value="1" />
+          <entry key="yarn.lock" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -69,11 +72,11 @@
           <entry key="MD" value="270" />
           <entry key="html" value="1955" />
           <entry key="js" value="4520" />
-          <entry key="json" value="100" />
+          <entry key="json" value="101" />
           <entry key="md" value="442" />
           <entry key="scss" value="127" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="617" />
+          <entry key="txt" value="658" />
           <entry key="vue" value="15561" />
           <entry key="vuepress" value="26" />
         </counts>
@@ -81,10 +84,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1972" />
-          <entry key="JSON" value="100" />
+          <entry key="JSON" value="101" />
           <entry key="JavaScript" value="4515" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="649" />
+          <entry key="PLAIN_TEXT" value="690" />
           <entry key="SCSS" value="127" />
           <entry key="Vue.js" value="15549" />
         </counts>
@@ -99,20 +102,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/button.spec.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -124,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/tests/unit/popover.spec.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -371,7 +379,7 @@
       <workItem from="1562398028809" duration="4830000" />
       <workItem from="1562410377792" duration="18258000" />
       <workItem from="1562568041874" duration="8773000" />
-      <workItem from="1565931245782" duration="6110000" />
+      <workItem from="1565931245782" duration="7450000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -520,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566004805010</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="复制test:unit命令， 方便travis运行防止报错">
+      <created>1566005673353</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566005673353</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218230000" />
+    <option name="totallyTimeSpent" value="219570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +554,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -594,7 +609,8 @@
     <MESSAGE value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
     <MESSAGE value="使用自定义指令，异步加载数据。" />
     <MESSAGE value="改造button和popover两个单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="改造button和popover两个单元测试" />
+    <MESSAGE value="复制test:unit命令， 方便travis运行防止报错" />
+    <option name="LAST_COMMIT_MESSAGE" value="复制test:unit命令， 方便travis运行防止报错" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,26 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/components/input.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="152">
-            <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/components/layout.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="152">
-            <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/components/popover.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -936,7 +932,7 @@
     <entry file="file://$PROJECT_DIR$/tests/unit/button.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -949,19 +945,29 @@
     <entry file="file://$PROJECT_DIR$/tests/unit/popover.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yarn-error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
