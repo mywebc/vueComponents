@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/button.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/popover.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/col.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/popover.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs-body.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-body.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs-head.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-head.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs-item.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-item.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs-pane.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-pane.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/toast.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,11 +69,11 @@
           <entry key="MD" value="270" />
           <entry key="html" value="1955" />
           <entry key="js" value="4520" />
-          <entry key="json" value="97" />
+          <entry key="json" value="100" />
           <entry key="md" value="442" />
           <entry key="scss" value="127" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="591" />
+          <entry key="txt" value="617" />
           <entry key="vue" value="15561" />
           <entry key="vuepress" value="26" />
         </counts>
@@ -98,10 +81,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1972" />
-          <entry key="JSON" value="97" />
+          <entry key="JSON" value="100" />
           <entry key="JavaScript" value="4515" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="623" />
+          <entry key="PLAIN_TEXT" value="649" />
           <entry key="SCSS" value="127" />
           <entry key="Vue.js" value="15549" />
         </counts>
@@ -116,11 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="126">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -137,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/popover.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="138">
               <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -263,11 +246,11 @@
         <option value="$PROJECT_DIR$/src/var.scss" />
         <option value="$PROJECT_DIR$/src/button.vue" />
         <option value="$PROJECT_DIR$/src/demo.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tests/unit/example.spec.js" />
         <option value="$PROJECT_DIR$/src/svg.js" />
         <option value="$PROJECT_DIR$/tests/unit/button.spec.js" />
         <option value="$PROJECT_DIR$/tests/popover.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -388,7 +371,7 @@
       <workItem from="1562398028809" duration="4830000" />
       <workItem from="1562410377792" duration="18258000" />
       <workItem from="1562568041874" duration="8773000" />
-      <workItem from="1565931245782" duration="5262000" />
+      <workItem from="1565931245782" duration="6110000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -530,11 +513,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562757102388</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="改造button和popover两个单元测试">
+      <created>1566004805010</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1566004805010</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217382000" />
+    <option name="totallyTimeSpent" value="218230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,7 +539,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -603,7 +593,8 @@
     <MESSAGE value="下拉列表增加可设置属性height,初步调整样式" />
     <MESSAGE value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
     <MESSAGE value="使用自定义指令，异步加载数据。" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用自定义指令，异步加载数据。" />
+    <MESSAGE value="改造button和popover两个单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="改造button和popover两个单元测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/button.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -964,11 +948,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/popover.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="138">
           <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
