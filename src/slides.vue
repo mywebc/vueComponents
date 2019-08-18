@@ -7,7 +7,9 @@
     @touchend="onTouchEnd"
   >
     <div class="g-slides-window" ref="window">
-      <slot> </slot>
+      <div class="g-slides-wrapper">
+        <slot></slot>
+      </div>
     </div>
     <div class="g-slides-dots">
       <span @click="onClickPrev" data-action="prev">
@@ -41,10 +43,10 @@ export default {
       type: Boolean,
       default: true
     },
-      autoPlayDelay: {
-        type: Number,
-          default: 3000
-      }
+    autoPlayDelay: {
+      type: Number,
+      default: 3000
+    }
   },
   data() {
     return {
@@ -175,6 +177,7 @@ export default {
 
 <style scoped lang="scss">
 .g-slides {
+  overflow: hidden;
   &-window {
     overflow: hidden;
   }

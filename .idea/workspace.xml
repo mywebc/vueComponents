@@ -34,7 +34,7 @@
           <entry key="MD" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="10" />
-          <entry key="js" value="81" />
+          <entry key="js" value="82" />
           <entry key="json" value="16" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
@@ -54,7 +54,7 @@
         <counts>
           <entry key="HTML" value="10" />
           <entry key="JSON" value="16" />
-          <entry key="JavaScript" value="81" />
+          <entry key="JavaScript" value="82" />
           <entry key="Markdown" value="48" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="2" />
@@ -70,14 +70,14 @@
         <counts>
           <entry key="MD" value="270" />
           <entry key="html" value="1955" />
-          <entry key="js" value="4520" />
+          <entry key="js" value="4522" />
           <entry key="json" value="101" />
           <entry key="lock" value="1" />
           <entry key="md" value="442" />
           <entry key="scss" value="127" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="671" />
-          <entry key="vue" value="18029" />
+          <entry key="txt" value="700" />
+          <entry key="vue" value="18147" />
           <entry key="vuepress" value="26" />
         </counts>
       </usages-collector>
@@ -85,11 +85,11 @@
         <counts>
           <entry key="HTML" value="1972" />
           <entry key="JSON" value="101" />
-          <entry key="JavaScript" value="4515" />
+          <entry key="JavaScript" value="4517" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="703" />
+          <entry key="PLAIN_TEXT" value="732" />
           <entry key="SCSS" value="127" />
-          <entry key="Vue.js" value="18017" />
+          <entry key="Vue.js" value="18135" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
@@ -148,8 +148,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/slides.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+            <state relative-caret-position="216">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/unit/slides.spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,8 +205,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button-demos</find>
-      <find>content</find>
       <find>offset</find>
       <find>g-tabs-pane</find>
       <find>selected</find>
@@ -223,6 +233,8 @@
       <find>g-slides</find>
       <find>selectedIndex</find>
       <find>getSelected</find>
+      <find>childrenLength</find>
+      <find>playAutomatically</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docs/install/README.md" />
         <option value="$PROJECT_DIR$/docs/.vuepress/components/input-demos.vue" />
         <option value="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" />
         <option value="$PROJECT_DIR$/src/row.vue" />
@@ -281,6 +292,7 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/yarn.lock" />
         <option value="$PROJECT_DIR$/src/demo.vue" />
+        <option value="$PROJECT_DIR$/tests/unit/slides.spec.js" />
         <option value="$PROJECT_DIR$/src/slides.vue" />
       </list>
     </option>
@@ -344,7 +356,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="comm&#9;ACTION&#9;CheckinProject&#10;commi&#9;ACTION&#9;CheckinProject&#10;key&#9;ACTION&#9;ChangeKeymap&#10;refor&#9;ACTION&#9;ReformatWithPrettierAction&#10;refo&#9;ACTION&#9;ReformatWithPrettierAction&#10;forma&#9;ACTION&#9;ReformatWithPrettierAction&#10;ref&#9;ACTION&#9;ReformatCode&#10;pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;sv&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/svg.js&#10;var&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;butt&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/button.vue&#10;va&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;commit&#9;ACTION&#9;CheckinProject&#10;demo&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/demo.vue&#10;index&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;sor&#9;ACTION&#9;linessorter.sort&#10;lines&#9;ACTION&#9;linessorter.sort&#10;inde&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;animation&#9;null&#9;null&#10;GuL&#9;null&#9;null&#10;coll&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/collapse-item.vue&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
+    <property name="SearchEverywhereHistoryKey" value="commit&#9;ACTION&#9;CheckinProject&#10;comm&#9;ACTION&#9;CheckinProject&#10;pack&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/package.json&#10;commi&#9;ACTION&#9;CheckinProject&#10;key&#9;ACTION&#9;ChangeKeymap&#10;refor&#9;ACTION&#9;ReformatWithPrettierAction&#10;refo&#9;ACTION&#9;ReformatWithPrettierAction&#10;forma&#9;ACTION&#9;ReformatWithPrettierAction&#10;ref&#9;ACTION&#9;ReformatCode&#10;sv&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/svg.js&#10;var&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;butt&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/button.vue&#10;va&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/var.scss&#10;demo&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/demo.vue&#10;index&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;sor&#9;ACTION&#9;linessorter.sort&#10;lines&#9;ACTION&#9;linessorter.sort&#10;inde&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/index.html&#10;animation&#9;null&#9;null&#10;GuL&#9;null&#9;null&#10;coll&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/collapse-item.vue&#10;to&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/src/toast.vue&#10;keyma&#9;ACTION&#9;ChangeKeymap&#10;in&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/input.test.js&#10;bu&#9;FILE&#9;file://C:/Users/陈晓乐/Desktop/学习笔记/vue/vueComponents/test/button.test.js&#10;vcs&#9;ACTION&#9;Vcs.QuickListPopupAction&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;keymap&#9;ACTION&#9;ChangeKeymap&#10;reformat&#9;ACTION&#9;ReformatCode&#10;keymap\&#9;ACTION&#9;ChangeKeymap&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;reforma&#9;ACTION&#9;ReformatCode&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -402,7 +414,7 @@
       <workItem from="1562398028809" duration="4830000" />
       <workItem from="1562410377792" duration="18258000" />
       <workItem from="1562568041874" duration="8773000" />
-      <workItem from="1565931245782" duration="24533000" />
+      <workItem from="1565931245782" duration="26890000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -572,11 +584,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566091608274</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="添加前进后退两个按钮">
+      <created>1566092710445</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1566092710445</updated>
+    </task>
+    <task id="LOCAL-00026" summary="添加测试用例">
+      <created>1566093885229</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1566093885229</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236653000" />
+    <option name="totallyTimeSpent" value="239010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +617,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21400264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -648,7 +674,9 @@
     <MESSAGE value="改造button和popover两个单元测试" />
     <MESSAGE value="复制test:unit命令， 方便travis运行防止报错" />
     <MESSAGE value="添加touch事件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加touch事件" />
+    <MESSAGE value="添加前进后退两个按钮" />
+    <MESSAGE value="添加测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加测试用例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,9 +695,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/unit/tabs-item.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/button-group.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -929,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/button.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -981,6 +999,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/slides.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
@@ -1000,8 +1035,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/slides.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
