@@ -1,6 +1,11 @@
 <template>
   <div>
-    <g-slides width="300px" height="200px"  class="wrapper" :selected.sync="selected">
+    <g-slides
+      width="300px"
+      height="200px"
+      class="wrapper"
+      :selected.sync="selected"
+    >
       <g-slides-item name="1">
         <div class="box">1</div>
       </g-slides-item>
@@ -34,7 +39,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-
 .wrapper {
   margin: 40px;
 }

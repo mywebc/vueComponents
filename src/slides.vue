@@ -1,9 +1,23 @@
 <template>
-  <div class="g-slides">
+  <div
+    class="g-slides"
+    @mouseenter="onMouseEnter"
+    @mouseleave="onMouseLeave"
+    @touchstart="onTouchStart"
+    @touchend="onTouchEnd"
+  >
     <div class="g-slides-window" ref="window">
       <slot> </slot>
     </div>
-
+    <div class="g-slides-dots">
+      <span
+        v-for="n in childrenLength"
+        :class="{ active: selectedIndex === n - 1 }"
+        :key="n"
+        @click="select(n - 1)"
+        >{{ n }}</span
+      >
+    </div>
   </div>
 </template>
 
@@ -19,33 +33,107 @@ export default {
       default: true
     }
   },
+  data() {
+    return {
+      childrenLength: 0,
+      lastSelectedIndex: undefined,
+      timerId: undefined,
+      startTouch: undefined
+    };
+  },
   mounted() {
     // 默认选中
     this.updateChildren();
     this.playAutomatically();
+    this.childrenLength = this.$children.length;
   },
   updated() {
     this.updateChildren();
   },
+  computed: {
+    selectedIndex() {
+      let index = this.names.indexOf(this.selected);
+      return index === -1 ? 0 : index;
+    },
+    names() {
+      return this.items.map(vm => vm.name);
+    },
+    items() {
+      return this.$children.filter(vm => vm.$options.name === "GOSlidesItem");
+    }
+  },
   methods: {
-    playAutomatically() {
-      debugger;
-      const names = this.$children.map(vm => vm.name);
-      const index = names.indexOf(this.getSelected());
-      let run = () => {
-        let newIndex = index - 1;
-        if (newIndex === -1) {
-          newIndex = names.length - 1;
+    onTouchStart(e) {
+      this.pause();
+      // touches里面有点的坐标，以此判断向左还是向右
+      if (e.touches.length > 1) {
+        return;
+      }
+      this.startTouch = e.touches[0];
+    },
+    onTouchEnd(e) {
+      let endTouch = e.changedTouches[0];
+      let { clientX: x1, clientY: y1 } = this.startTouch;
+      let { clientX: x2, clientY: y2 } = endTouch;
+      // 通过角度判断到底是左右滑还是上下滑
+      let distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+      let deltaY = Math.abs(y2 - y1);
+      let rate = distance / deltaY;
+      if (rate > 2) {
+        if (x2 > x1) {
+          this.select(this.selectedIndex - 1);
+        } else {
+          this.select(this.selectedIndex + 1);
         }
-        if (newIndex === names.length) {
+      }
+      this.$nextTick(() => {
+        this.playAutomatically();
+      });
+    },
+    onMouseEnter() {
+      this.pause();
+    },
+    onMouseLeave() {
+      this.playAutomatically();
+    },
+    // 选中小圆圈
+    select(newIndex) {
+      this.lastSelectedIndex = this.selectedIndex;
+      if (newIndex === -1) {
+        newIndex = this.names.length - 1;
+      }
+      if (newIndex === this.names.length) {
+        newIndex = 0;
+      }
+      this.$emit("update:selected", this.names[newIndex]);
+    },
+    playAutomatically() {
+      // 如果当前有动画
+      if (this.timerId) {
+        return;
+      }
+      let run = () => {
+        const index = this.names.indexOf(this.getSelected());
+        let newIndex = index + 1;
+        if (newIndex === -1) {
+          newIndex = this.names.length - 1;
+        }
+        if (newIndex === this.names.length) {
           newIndex = 0;
         }
-        this.$emit("update:selected", names[newIndex]);
+        this.select(newIndex);
         // 使用setTimeout取代setInterval
+        this.timerId = setTimeout(run, 2000);
       };
-      setTimeout(run, 2000);
+      this.timerId = setTimeout(run, 2000);
     },
-    // 获取选中的name
+    // 暂停
+    pause() {
+      window.clearTimeout(this.timerId);
+      // 别忘了置空timerId
+      this.timerId = undefined;
+    },
+    // 获取选中的name(没有传则默认第一个)
     getSelected() {
       const first = this.$children[0];
       return this.selected || first.name;
@@ -54,11 +142,10 @@ export default {
       const selected = this.getSelected();
       // 当slides组件更新时
       this.$children.forEach(vm => {
-        vm.selected = selected;
-        const names = this.$children.map(vm => vm.name);
-        let newIndex = names.indexOf(selected);
-        let oldIndex = names.indexOf(vm.name);
-        vm.reverse = newIndex > oldIndex ? false : true;
+        vm.reverse = this.selectedIndex > this.lastSelectedIndex ? false : true;
+        this.$nextTick(() => {
+          vm.selected = selected;
+        });
       });
     }
   }
