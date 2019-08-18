@@ -8,9 +8,11 @@
       </span>
     </span>
     <!--弹出层-->
-    <div class="g-sub-nav-popover" v-show="open">
-      <slot></slot>
-    </div>
+    <transition @enter="enter" @leave="leave">
+      <div class="g-sub-nav-popover" v-show="open" :class="{ vertical }">
+        <slot></slot>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -21,7 +23,7 @@ export default {
   components: { GIcon },
   directives: { ClickOutside },
   name: "GOSubNav",
-  inject: ["root"],
+  inject: ["root", "vertical"],
   props: {
     name: {
       type: String,
@@ -39,6 +41,16 @@ export default {
     }
   },
   methods: {
+    // js控制动画
+    enter(el, done) {
+      let { height } = el.getBoundingClientRect();
+      el.style.height = height;
+      done();
+    },
+    leave(el, done) {
+      el.style.height = 0;
+      done()
+    },
     onClick() {
       this.open = !this.open;
     },
@@ -90,6 +102,12 @@ export default {
     font-size: $font-size;
     color: $light-color;
     min-width: 8em;
+    &.vertical {
+      position: static;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+    }
   }
 }
 .g-sub-nav .g-sub-nav {

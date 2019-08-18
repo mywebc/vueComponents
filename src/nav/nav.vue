@@ -1,5 +1,5 @@
 <template>
-  <div class="g-nav">
+  <div class="g-nav" :class="{ vertical }">
     <slot></slot>
   </div>
 </template>
@@ -10,7 +10,8 @@ export default {
   //  依赖注入
   provide() {
     return {
-      root: this
+      root: this,
+      vertical: this.vertical
     };
   },
   props: {
@@ -19,6 +20,10 @@ export default {
       default: () => []
     },
     multiple: {
+      type: Boolean,
+      default: false
+    },
+    vertical: {
       type: Boolean,
       default: false
     }
@@ -76,5 +81,9 @@ export default {
   color: $color;
   cursor: default;
   user-select: none;
+  &.vertical {
+    flex-direction: column;
+    border: 1px solid $grey;
+  }
 }
 </style>
