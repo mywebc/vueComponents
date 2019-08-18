@@ -17,6 +17,7 @@
         v-for="n in childrenLength"
         :class="{ active: selectedIndex === n - 1 }"
         :key="n"
+        :data-index="n - 1"
         @click="select(n - 1)"
         >{{ n }}</span
       >
@@ -39,7 +40,11 @@ export default {
     autoPlay: {
       type: Boolean,
       default: true
-    }
+    },
+      autoPlayDelay: {
+        type: Number,
+          default: 3000
+      }
   },
   data() {
     return {
@@ -52,7 +57,9 @@ export default {
   mounted() {
     // 默认选中
     this.updateChildren();
-    this.playAutomatically();
+    if (this.autoPlay) {
+      this.playAutomatically();
+    }
     this.childrenLength = this.items.length;
   },
   updated() {
@@ -137,9 +144,9 @@ export default {
         }
         this.select(newIndex);
         // 使用setTimeout取代setInterval
-        this.timerId = setTimeout(run, 2000);
+        this.timerId = setTimeout(run, this.autoPlayDelay);
       };
-      this.timerId = setTimeout(run, 2000);
+      this.timerId = setTimeout(run, this.autoPlayDelay);
     },
     // 暂停
     pause() {
