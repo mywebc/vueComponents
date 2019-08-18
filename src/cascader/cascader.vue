@@ -21,7 +21,7 @@
 import CascaderItems from "./cascader-items";
 import ClickOutside from "../click-outside";
 export default {
-  name: "GuluCascader",
+  name: "GOCascader",
   components: { CascaderItems },
   directives: { ClickOutside },
   props: {
