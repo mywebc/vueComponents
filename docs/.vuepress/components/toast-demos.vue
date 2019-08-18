@@ -13,7 +13,7 @@
 </template>
 <script>
     import plugin from '../../../src/plugin'
-    import Button from '../../../src/button'
+    import Button from '../../../src/button/button'
     import Vue from 'vue'
     Vue.use(plugin)
 
