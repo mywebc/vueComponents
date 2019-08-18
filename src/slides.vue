@@ -138,12 +138,12 @@ export default {
       let run = () => {
         const index = this.names.indexOf(this.getSelected());
         let newIndex = index + 1;
-        if (newIndex === -1) {
-          newIndex = this.names.length - 1;
-        }
-        if (newIndex === this.names.length) {
-          newIndex = 0;
-        }
+        // if (newIndex === -1) {
+        //   newIndex = this.names.length - 1;
+        // }
+        // if (newIndex === this.names.length) {
+        //   newIndex = 0;
+        // }
         this.select(newIndex);
         // 使用setTimeout取代setInterval
         this.timerId = setTimeout(run, this.autoPlayDelay);
