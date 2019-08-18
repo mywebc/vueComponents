@@ -10,6 +10,9 @@
       <slot> </slot>
     </div>
     <div class="g-slides-dots">
+      <span @click="onClickPrev" data-action="prev">
+        <g-icon name="left"></g-icon>
+      </span>
       <span
         v-for="n in childrenLength"
         :class="{ active: selectedIndex === n - 1 }"
@@ -17,13 +20,18 @@
         @click="select(n - 1)"
         >{{ n }}</span
       >
+      <span @click="onClickNext" data-action="next">
+        <g-icon name="right"></g-icon>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
+import GIcon from "./icon";
 export default {
   name: "GoSlides",
+  components: { GIcon },
   props: {
     selected: {
       type: String
@@ -45,7 +53,7 @@ export default {
     // 默认选中
     this.updateChildren();
     this.playAutomatically();
-    this.childrenLength = this.$children.length;
+    this.childrenLength = this.items.length;
   },
   updated() {
     this.updateChildren();
@@ -63,6 +71,12 @@ export default {
     }
   },
   methods: {
+    onClickPrev() {
+      this.select(this.selectedIndex - 1);
+    },
+    onClickNext() {
+      this.select(this.selectedIndex + 1);
+    },
     onTouchStart(e) {
       this.pause();
       // touches里面有点的坐标，以此判断向左还是向右
