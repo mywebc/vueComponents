@@ -19,7 +19,7 @@
 
 <script>
 import CascaderItems from "./cascader-items";
-import ClickOutside from "./click-outside";
+import ClickOutside from "../click-outside";
 export default {
   name: "GuluCascader",
   components: { CascaderItems },

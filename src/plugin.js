@@ -1,4 +1,4 @@
-import Toast from './toast'
+import Toast from './toast/toast'
 
 
 // 提取函数

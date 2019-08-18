@@ -70,7 +70,7 @@
     </div>
 </template>
 <script>
-    import Popover from '../../../src/popover'
+    import Popover from '../../../src/popover/popover'
     import Button from '../../../src/button/button'
 
     export default {

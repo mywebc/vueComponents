@@ -26,8 +26,8 @@
     </div>
 </template>
 <script>
-    import Col from '../../../src/col'
-    import Row from '../../../src/row'
+    import Col from '../../../src/grid/col'
+    import Row from '../../../src/grid/row'
     export default {
         components: {
             'g-col': Col,

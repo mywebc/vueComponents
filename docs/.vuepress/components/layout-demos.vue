@@ -27,11 +27,11 @@
     </div>
 </template>
 <script>
-    import Layout from '../../../src/layout'
-    import Content from '../../../src/content'
-    import Header from '../../../src/header'
-    import Footer from '../../../src/footer'
-    import Sider from '../../../src/sider'
+    import Layout from '../../../src/layout/layout'
+    import Content from '../../../src/layout/content'
+    import Header from '../../../src/layout/header'
+    import Footer from '../../../src/layout/footer'
+    import Sider from '../../../src/layout/sider'
 
     export default {
         components: {

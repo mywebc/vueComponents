@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import GIcon from "./icon";
+import GIcon from "../icon";
 export default {
   name: "GoSlides",
   components: { GIcon },

@@ -8,7 +8,7 @@
     </div>
 </template>
 <script>
-    import Input from '../../../src/input'
+    import Input from '../../../src/input/input'
     export default {
         components: {
             'g-input': Input
