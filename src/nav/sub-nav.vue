@@ -8,11 +8,23 @@
       </span>
     </span>
     <!--弹出层-->
-    <transition @enter="enter" @leave="leave">
-      <div class="g-sub-nav-popover" v-show="open" :class="{ vertical }">
+    <template v-if="vertical">
+      <transition
+        @enter="enter"
+        @leave="leave"
+        @after-leave="afterLeave"
+        @after-enter="afterEnter"
+      >
+        <div class="g-sub-nav-popover" v-show="open" :class="{ vertical }">
+          <slot></slot>
+        </div>
+      </transition>
+    </template>
+    <template v-else>
+      <div class="g-sub-nav-popover" v-show="open">
         <slot></slot>
       </div>
-    </transition>
+    </template>
   </div>
 </template>
 
@@ -44,13 +56,29 @@ export default {
     // js控制动画
     enter(el, done) {
       let { height } = el.getBoundingClientRect();
-      el.style.height = height;
-      done();
+      el.style.height = 0;
+      el.getBoundingClientRect();
+      el.style.height = `${height}px`;
+      el.addEventListener("transitionend", () => {
+        done();
+      });
+    },
+    afterEnter(el) {
+      el.style.height = "auto";
     },
     leave(el, done) {
+      let { height } = el.getBoundingClientRect();
+      el.style.height = `${height}px`;
+      el.getBoundingClientRect();
       el.style.height = 0;
-      done()
+      el.addEventListener("transitionend", () => {
+        done();
+      });
     },
+    afterLeave(el) {
+      el.style.height = "auto";
+    },
+
     onClick() {
       this.open = !this.open;
     },
@@ -91,6 +119,7 @@ export default {
     display: none;
   }
   &-popover {
+    transition: height 250ms;
     background: white;
     position: absolute;
     top: 100%;
@@ -107,6 +136,7 @@ export default {
       border-radius: 0;
       border: none;
       box-shadow: none;
+      overflow: hidden;
     }
   }
 }
