@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/table/demo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/table/table.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/table/demo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table/table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/table/table.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,8 +79,8 @@
           <entry key="md" value="442" />
           <entry key="scss" value="133" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="1118" />
-          <entry key="vue" value="20159" />
+          <entry key="txt" value="1133" />
+          <entry key="vue" value="20699" />
           <entry key="vuepress" value="26" />
         </counts>
       </usages-collector>
@@ -91,9 +90,9 @@
           <entry key="JSON" value="101" />
           <entry key="JavaScript" value="5084" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="1150" />
+          <entry key="PLAIN_TEXT" value="1165" />
           <entry key="SCSS" value="133" />
-          <entry key="Vue.js" value="20147" />
+          <entry key="Vue.js" value="20687" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
@@ -131,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/table/table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="315">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -150,7 +149,7 @@
         <entry file="file://$PROJECT_DIR$/src/table/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+              <caret line="3" column="94" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -448,7 +447,7 @@
       <workItem from="1565931245782" duration="53419000" />
       <workItem from="1566260133155" duration="4430000" />
       <workItem from="1566282469705" duration="599000" />
-      <workItem from="1566300265501" duration="4521000" />
+      <workItem from="1566300265501" duration="6015000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -744,11 +743,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566264964817</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="table基本结构以及单选">
+      <created>1566305573330</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1566305573330</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275089000" />
+    <option name="totallyTimeSpent" value="276583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +825,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="下拉列表增加可设置属性height,初步调整样式" />
     <MESSAGE value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
     <MESSAGE value="使用自定义指令，异步加载数据。" />
     <MESSAGE value="改造button和popover两个单元测试" />
@@ -844,7 +849,8 @@
     <MESSAGE value="添加validate验证器，并且尝试使用karma测试" />
     <MESSAGE value="基本完成pager，script判断测试bug" />
     <MESSAGE value="完成pager测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成pager测试用例" />
+    <MESSAGE value="table基本结构以及单选" />
+    <option name="LAST_COMMIT_MESSAGE" value="table基本结构以及单选" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,7 +1177,7 @@
     <entry file="file://$PROJECT_DIR$/src/table/demo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+          <caret line="3" column="94" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1182,8 +1188,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/table/table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="315">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
         </state>
       </provider>
     </entry>

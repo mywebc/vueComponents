@@ -3,14 +3,16 @@
         <table class="g-table" :class="bordered ,compact, striped">
             <thead>
             <tr>
-                <th><input type="checkbox"/></th>
+                <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked"/></th>
                 <th>#</th>
                 <th v-for="column in columns">{{column.text}}</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="item, index in dataSource">
-                <td><input type="checkbox" @click="onChangeItem(item, index, $event)"/></td>
+                <td><input type="checkbox" @change="onChangeItem(item, index, $event)"
+                           :checked="isSelectedCheckbox(item)"
+                /></td>
                 <td v-if="numberVisible">{{index+1}}}</td>
                 <template v-for="column in columns">
                     <td>{{item[column.field]}}</td>
@@ -28,9 +30,16 @@
                 type: Array,
                 required: true
             },
+            selectedItems: {
+                type: Array,
+                default: () => []
+            },
             dataSource: {
                 type: Array,
-                required: true
+                required: true,
+                validator: function (array) {
+                    return array.filter(i => i.id === undefined) <= 0;
+                }
             },
             numberVisible: {
                 type: Boolean,
@@ -51,10 +60,40 @@
         },
         methods: {
             onChangeItem(item, index, e) {
-                console.log(e.target.checked);
-                this.$emit("update:selected", {selected: e.target.checked, item, index})
+                let selected = e.target.checked
+                let copy = JSON.parse(JSON.stringify(this.selectedItems))
+                if (selected) {
+                    copy.push(item)
+                } else {
+                    copy.splice(copy.indexOf(item), 1)
+                }
+                this.$emit("update:selectedItems", copy)
+            },
+            onChangeAllItems(e) {
+                let selected = e.target.checked
+                if (selected) {
+                    this.$emit("update:selectedItems", this.dataSource)
+                } else {
+                    this.$emit("update:selectedItems", [])
+                }
+            },
+            // 判断每条数据选中状态
+            isSelectedCheckbox(item) {
+                return this.selectedItems.filter(i => i.id === item.id).length > 0
             }
-        }
+        },
+        watch: {
+            //切换半选状态
+            selectedItems() {
+                if (this.selectedItems.length === this.dataSource.length) {
+                    this.$refs.allChecked.indeterminate = false
+                } else if (this.selectedItems.length === 0) {
+                    this.$refs.allChecked.indeterminate = false
+                } else {
+                    this.$refs.allChecked.indeterminate = true
+                }
+            }
+        },
     }
 </script>
 <style scoped lang="scss">

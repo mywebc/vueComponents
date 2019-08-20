@@ -1,7 +1,7 @@
 <template>
     <div>
         <div style="margin: 20px">
-            <g-table :columns="columns" :dataSource="dataSource" bordered></g-table>
+            <g-table :columns="columns" :dataSource="dataSource" bordered :selected-items.sync="selected"></g-table>
         </div>
         <div style="margin: 20px">
             <g-pager :totalPage="16" :currentPage.sync="currentPage"></g-pager>
@@ -26,7 +26,8 @@
                     {id: 2, name: '陈晓拉尼', score: 99},
                     {id: 3, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
                     {id: 4, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
-                ]
+                ],
+                selected: []
             }
         }
     };
