@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17feb818-f3b4-42a8-a6dd-d1e3cd345379" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pager/demo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pager/pager.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/pager.spec.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +34,7 @@
           <entry key="MD" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="10" />
-          <entry key="js" value="102" />
+          <entry key="js" value="103" />
           <entry key="json" value="18" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
@@ -59,7 +54,7 @@
         <counts>
           <entry key="HTML" value="10" />
           <entry key="JSON" value="18" />
-          <entry key="JavaScript" value="102" />
+          <entry key="JavaScript" value="103" />
           <entry key="Markdown" value="48" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="3" />
@@ -75,13 +70,13 @@
         <counts>
           <entry key="MD" value="270" />
           <entry key="html" value="1955" />
-          <entry key="js" value="5058" />
+          <entry key="js" value="5082" />
           <entry key="json" value="101" />
           <entry key="lock" value="1" />
           <entry key="md" value="442" />
           <entry key="scss" value="133" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="1054" />
+          <entry key="txt" value="1095" />
           <entry key="vue" value="19268" />
           <entry key="vuepress" value="26" />
         </counts>
@@ -90,9 +85,9 @@
         <counts>
           <entry key="HTML" value="1976" />
           <entry key="JSON" value="101" />
-          <entry key="JavaScript" value="5049" />
+          <entry key="JavaScript" value="5073" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="1086" />
+          <entry key="PLAIN_TEXT" value="1127" />
           <entry key="SCSS" value="133" />
           <entry key="Vue.js" value="19256" />
           <entry key="yarn.lock" value="1" />
@@ -109,21 +104,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/svg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="612">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/svg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/tests/unit/pager.spec.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -439,7 +430,7 @@
       <workItem from="1562410377792" duration="18258000" />
       <workItem from="1562568041874" duration="8773000" />
       <workItem from="1565931245782" duration="53419000" />
-      <workItem from="1566260133155" duration="1830000" />
+      <workItem from="1566260133155" duration="2084000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -721,11 +712,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566209086789</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="基本完成pager，script判断测试bug">
+      <created>1566264803158</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1566264803158</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267369000" />
+    <option name="totallyTimeSpent" value="267623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,7 +794,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="渲染下拉弹出的内容" />
     <MESSAGE value="改造cascaderitems，使用递归渲染出下拉列表。" />
     <MESSAGE value="下拉列表增加可设置属性height,初步调整样式" />
     <MESSAGE value="因为scss编译过慢，将构建工具parcel改为vue-cli3" />
@@ -821,7 +818,8 @@
     <MESSAGE value="完成部分nav测试用例" />
     <MESSAGE value="添加validate验证器" />
     <MESSAGE value="添加validate验证器，并且尝试使用karma测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加validate验证器，并且尝试使用karma测试" />
+    <MESSAGE value="基本完成pager，script判断测试bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本完成pager，script判断测试bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,16 +837,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/components/collapse.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/components/tabs.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -975,6 +963,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="193" column="1" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,10 +1156,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/svg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="612">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/pager.spec.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
