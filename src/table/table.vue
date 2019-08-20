@@ -5,17 +5,17 @@
             <tr>
                 <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked"/></th>
                 <th>#</th>
-                <th v-for="column in columns">{{column.text}}</th>
+                <th v-for="column,index in columns" :key="index">{{column.text}}</th>
             </tr>
             </thead>
             <tbody>
-            <tr v-for="item, index in dataSource">
+            <tr v-for="item, index in dataSource" :key="index">
                 <td><input type="checkbox" @change="onChangeItem(item, index, $event)"
                            :checked="isSelectedCheckbox(item)"
                 /></td>
                 <td v-if="numberVisible">{{index+1}}}</td>
-                <template v-for="column in columns">
-                    <td>{{item[column.field]}}</td>
+                <template v-for="column in columns" >
+                    <td :key="column.field">{{item[column.field]}}</td>
                 </template>
             </tr>
             </tbody>
@@ -65,7 +65,7 @@
                 if (selected) {
                     copy.push(item)
                 } else {
-                    copy.splice(copy.indexOf(item), 1)
+                    copy = copy.filter(i => i.id !== item.id)
                 }
                 this.$emit("update:selectedItems", copy)
             },
