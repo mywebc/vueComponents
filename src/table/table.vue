@@ -3,7 +3,8 @@
         <table class="g-table" :class="bordered ,compact, striped">
             <thead>
             <tr>
-                <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked"/></th>
+                <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked" :checked="areAllItemsSelected"/>
+                </th>
                 <th>#</th>
                 <th v-for="column,index in columns" :key="index">{{column.text}}</th>
             </tr>
@@ -14,7 +15,7 @@
                            :checked="isSelectedCheckbox(item)"
                 /></td>
                 <td v-if="numberVisible">{{index+1}}}</td>
-                <template v-for="column in columns" >
+                <template v-for="column in columns">
                     <td :key="column.field">{{item[column.field]}}</td>
                 </template>
             </tr>
@@ -80,6 +81,25 @@
             // 判断每条数据选中状态
             isSelectedCheckbox(item) {
                 return this.selectedItems.filter(i => i.id === item.id).length > 0
+            },
+
+        },
+        computed: {
+            // 计算当前选中的是否相等
+            areAllItemsSelected() {
+                let a = this.dataSource.map(item => item.id).sort()
+                let b = this.selectedItems.map(item => item.id).sort()
+                if (a.length !== b.length) {
+                    return false
+                }
+                let equal = true
+                for (let i = 0; i < a.length; i++) {
+                    if (a[i] !== b[i]) {
+                        equal = false
+                        break
+                    }
+                }
+                return equal
             }
         },
         watch: {
