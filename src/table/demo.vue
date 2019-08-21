@@ -1,9 +1,13 @@
 <template>
     <div>
         <div style="margin: 20px">
-            <g-table :columns="columns" :dataSource="dataSource" bordered
+            <g-table :columns="columns"
+                     :dataSource="dataSource"
+                     :bordered="true"
                      :selected-items.sync="selected"
-                     :orderBy.sync="orderBy"></g-table>
+                     :orderBy.sync="orderBy"
+                     :loading="false"
+            ></g-table>
         </div>
         <div style="margin: 20px">
             <g-pager :totalPage="16" :currentPage.sync="currentPage"></g-pager>

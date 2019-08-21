@@ -30,6 +30,9 @@
             </tr>
             </tbody>
         </table>
+        <div class="g-table-loading" v-if="loading">
+            <g-icon name="loading" class="g-table-loading-inner"></g-icon>
+        </div>
     </div>
 </template>
 <script>
@@ -39,6 +42,10 @@
         name: "GOTable",
         components: {GIcon},
         props: {
+            loading: {
+                type: Boolean,
+                default: false,
+            },
             orderBy: {
                 type: Object,
                 default: () => ({})
