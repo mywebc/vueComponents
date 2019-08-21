@@ -6,7 +6,16 @@
                 <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked" :checked="areAllItemsSelected"/>
                 </th>
                 <th>#</th>
-                <th v-for="column,index in columns" :key="index">{{column.text}}</th>
+                <th v-for="column,index in columns" :key="index">
+                    <div class="g-table-header">
+                        {{column.text}}
+                        <span class="g-table-sorter" v-if="orderBy && column.field in orderBy"
+                              @click="changeOrderBy(column.field)">
+                            <g-icon name="asc" :class="{active: orderBy[column.field] === 'asc'}"></g-icon>
+                            <g-icon name="desc" :class="{active: orderBy[column.field] === 'desc'}"></g-icon>
+                        </span>
+                    </div>
+                </th>
             </tr>
             </thead>
             <tbody>
@@ -24,9 +33,16 @@
     </div>
 </template>
 <script>
+    import GIcon from '../icon'
+
     export default {
         name: "GOTable",
+        components: {GIcon},
         props: {
+            orderBy: {
+                type: Object,
+                default: () => ({})
+            },
             columns: {
                 type: Array,
                 required: true
@@ -81,6 +97,20 @@
             // 判断每条数据选中状态
             isSelectedCheckbox(item) {
                 return this.selectedItems.filter(i => i.id === item.id).length > 0
+            },
+            //切换排序状态，并通知组件外部
+            changeOrderBy(key) {
+                const newOrderBy = JSON.parse(JSON.stringify(this.orderBy))
+                let old = newOrderBy[key]
+                if (old === 'asc') {
+                    newOrderBy[key] = 'desc'
+                } else if (old === 'desc') {
+                    newOrderBy[key] = true
+                } else {
+                    newOrderBy[key] = 'asc'
+                }
+                console.log(newOrderBy);
+                this.$emit('update:orderBy', newOrderBy)
             },
 
         },
