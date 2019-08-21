@@ -7,6 +7,7 @@
                      :selected-items.sync="selected"
                      :orderBy.sync="orderBy"
                      :loading="false"
+                     :height="400"
             ></g-table>
         </div>
         <div style="margin: 20px">
@@ -32,6 +33,18 @@
                     {id: 2, name: '陈晓拉尼', score: 99},
                     {id: 3, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
                     {id: 4, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
+                    {id: 5, name: '陈晓拉尼', score: 88, description: 'xxxxxxxxxxxxxx'},
+                    {id: 6, name: '陈晓拉尼', score: 99},
+                    {id: 7, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
+                    {id: 8, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
+                    {id: 9, name: '陈晓拉尼', score: 88, description: 'xxxxxxxxxxxxxx'},
+                    {id: 10, name: '陈晓拉尼', score: 99},
+                    {id: 11, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
+                    {id: 12, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
+                    {id: 13, name: '陈晓拉尼', score: 88, description: 'xxxxxxxxxxxxxx'},
+                    {id: 14, name: '陈晓拉尼', score: 99},
+                    {id: 15, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
+                    {id: 16, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
                 ],
                 selected: [],
                 orderBy: {
@@ -48,4 +61,5 @@
         padding: 0;
         box-sizing: border-box;
     }
+
 </style>

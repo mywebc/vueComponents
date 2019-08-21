@@ -1,35 +1,39 @@
 <template>
-    <div class="g-table-wrapper">
-        <table class="g-table" :class="bordered ,compact, striped">
-            <thead>
-            <tr>
-                <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked" :checked="areAllItemsSelected"/>
-                </th>
-                <th>#</th>
-                <th v-for="column,index in columns" :key="index">
-                    <div class="g-table-header">
-                        {{column.text}}
-                        <span class="g-table-sorter" v-if="orderBy && column.field in orderBy"
-                              @click="changeOrderBy(column.field)">
+    <div class="g-table-wrapper" ref="wrapper">
+        <div :style="{height:`${height}px`,overflow: 'auto'}">
+            <table class="g-table" :class="bordered ,compact, striped" ref="table">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked"
+                               :checked="areAllItemsSelected"/>
+                    </th>
+                    <th>#</th>
+                    <th v-for="column,index in columns" :key="index">
+                        <div class="g-table-header">
+                            {{column.text}}
+                            <span class="g-table-sorter" v-if="orderBy && column.field in orderBy"
+                                  @click="changeOrderBy(column.field)">
                             <g-icon name="asc" :class="{active: orderBy[column.field] === 'asc'}"></g-icon>
                             <g-icon name="desc" :class="{active: orderBy[column.field] === 'desc'}"></g-icon>
                         </span>
-                    </div>
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="item, index in dataSource" :key="index">
-                <td><input type="checkbox" @change="onChangeItem(item, index, $event)"
-                           :checked="isSelectedCheckbox(item)"
-                /></td>
-                <td v-if="numberVisible">{{index+1}}}</td>
-                <template v-for="column in columns">
-                    <td :key="column.field">{{item[column.field]}}</td>
-                </template>
-            </tr>
-            </tbody>
-        </table>
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="item, index in dataSource" :key="index">
+                    <td><input type="checkbox" @change="onChangeItem(item, index, $event)"
+                               :checked="isSelectedCheckbox(item)"
+                    /></td>
+                    <td v-if="numberVisible">{{index+1}}}</td>
+                    <template v-for="column in columns">
+                        <td :key="column.field">{{item[column.field]}}</td>
+                    </template>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div class="g-table-loading" v-if="loading">
             <g-icon name="loading" class="g-table-loading-inner"></g-icon>
         </div>
@@ -42,6 +46,9 @@
         name: "GOTable",
         components: {GIcon},
         props: {
+            height: {
+                type: [Number, String],
+            },
             loading: {
                 type: Boolean,
                 default: false,
@@ -119,7 +126,40 @@
                 console.log(newOrderBy);
                 this.$emit('update:orderBy', newOrderBy)
             },
+            updateHeaderWidth() {
+                let table2 = this.table2
+                // 拿到原来table的header
+                let tableHeader = Array.from(this.$refs.table.children).filter(node => node.tagName.toLowerCase() === 'thead')[0]
+                let tableHeader2
+                Array.from(table2.children).map(node => {
+                    if (node.tagName.toLowerCase() !== 'thead') {
+                        node.remove()
+                    } else {
+                        // 复制后的table
+                        tableHeader2 = node
+                    }
+                })
+                Array.from(tableHeader.children[0].children).map((th, i) => {
+                    // 拿到原来表头的宽度
+                    const {width} = th.getBoundingClientRect()
+                    // 赋值给复制后的table
+                    tableHeader2.children[0].children[i].style.width = width + 'px'
 
+                })
+            }
+
+        },
+        mounted() {
+            let table2 = this.$refs.table.cloneNode(true)
+            this.table2 = table2
+            table2.classList.add("g-table-copy")
+            this.$refs.wrapper.appendChild(table2)
+            this.updateHeaderWidth()
+            this.onWindowResize = () => this.updateHeaderWidth()
+            window.addEventListener("resize", this.onWindowResize)
+        },
+        beforeDestroy() {
+            window.removeEventListener("resize", this.onWindowResize)
         },
         computed: {
             // 计算当前选中的是否相等
@@ -207,8 +247,8 @@
             padding: 10px;
             color: rgb(96, 98, 102);
             font-size: 14px;
-            border-bottom: 1px solid $grey;
             text-align: left;
+            border: 1px solid $grey;
         }
         &-sorter {
             display: inline-flex;
@@ -232,6 +272,10 @@
                     top: -1px;
                 }
             }
+        }
+        &-wrapper {
+            position: relative;
+            overflow: auto;
         }
         &-loading {
             position: absolute;
@@ -262,6 +306,13 @@
                 animation: xxx .3s linear;
                 animation-fill-mode: forwards
             }
+        }
+        &-copy {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
         }
     }
 </style>
