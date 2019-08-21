@@ -1,14 +1,15 @@
 <template>
     <div class="g-table-wrapper" ref="wrapper">
-        <div :style="{height:`${height}px`,overflow: 'auto'}">
+        <div :style="{height:`${height}px`,overflow: 'auto'}" ref="tableWrapper">
             <table class="g-table" :class="bordered ,compact, striped" ref="table">
                 <thead>
                 <tr>
-                    <th><input type="checkbox" @change="onChangeAllItems" ref="allChecked"
+                    <th :style="{width: '50px'}">
+                        <input type="checkbox" @change="onChangeAllItems" ref="allChecked"
                                :checked="areAllItemsSelected"/>
                     </th>
-                    <th>#</th>
-                    <th v-for="column,index in columns" :key="index">
+                    <th :style="{width: '50px'}" v-if="numberVisible">#</th>
+                    <th :style="{width: column.width + 'px'}" v-for="column,index in columns" :key="index">
                         <div class="g-table-header">
                             {{column.text}}
                             <span class="g-table-sorter" v-if="orderBy && column.field in orderBy"
@@ -22,12 +23,12 @@
                 </thead>
                 <tbody>
                 <tr v-for="item, index in dataSource" :key="index">
-                    <td><input type="checkbox" @change="onChangeItem(item, index, $event)"
-                               :checked="isSelectedCheckbox(item)"
+                    <td :style="{width: '50px'}"><input type="checkbox" @change="onChangeItem(item, index, $event)"
+                                                        :checked="isSelectedCheckbox(item)"
                     /></td>
-                    <td v-if="numberVisible">{{index+1}}}</td>
+                    <td :style="{width: '50px'}" v-if="numberVisible">{{index+1}}}</td>
                     <template v-for="column in columns">
-                        <td :key="column.field">{{item[column.field]}}</td>
+                        <td :style="{width: column.width + 'px'}" :key="column.field">{{item[column.field]}}</td>
                     </template>
                 </tr>
                 </tbody>
@@ -126,40 +127,22 @@
                 console.log(newOrderBy);
                 this.$emit('update:orderBy', newOrderBy)
             },
-            updateHeaderWidth() {
-                let table2 = this.table2
-                // 拿到原来table的header
-                let tableHeader = Array.from(this.$refs.table.children).filter(node => node.tagName.toLowerCase() === 'thead')[0]
-                let tableHeader2
-                Array.from(table2.children).map(node => {
-                    if (node.tagName.toLowerCase() !== 'thead') {
-                        node.remove()
-                    } else {
-                        // 复制后的table
-                        tableHeader2 = node
-                    }
-                })
-                Array.from(tableHeader.children[0].children).map((th, i) => {
-                    // 拿到原来表头的宽度
-                    const {width} = th.getBoundingClientRect()
-                    // 赋值给复制后的table
-                    tableHeader2.children[0].children[i].style.width = width + 'px'
-
-                })
-            }
-
         },
         mounted() {
-            let table2 = this.$refs.table.cloneNode(true)
+            // 复制一个空的table
+            let table2 = this.$refs.table.cloneNode(false)
             this.table2 = table2
             table2.classList.add("g-table-copy")
+            // 获取head
+            let thead = this.$refs.table.children[0]
+            // 获取head高度
+            let {height} = thead.getBoundingClientRect()
+            // 给table赋值
+            this.$refs.tableWrapper.style.marginTop = height + 'px'
+            // 我们现在表格的高度多了一个head的高度
+            this.$refs.tableWrapper.style.height = this.height - height + 'px'
+            table2.appendChild(thead)
             this.$refs.wrapper.appendChild(table2)
-            this.updateHeaderWidth()
-            this.onWindowResize = () => this.updateHeaderWidth()
-            window.addEventListener("resize", this.onWindowResize)
-        },
-        beforeDestroy() {
-            window.removeEventListener("resize", this.onWindowResize)
         },
         computed: {
             // 计算当前选中的是否相等

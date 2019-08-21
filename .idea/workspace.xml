@@ -47,7 +47,7 @@
           <entry key="q" value="4" />
           <entry key="scss" value="4" />
           <entry key="sh" value="1" />
-          <entry key="ts" value="4" />
+          <entry key="ts" value="5" />
           <entry key="vue" value="154" />
           <entry key="vuepress" value="2" />
           <entry key="xml" value="1" />
@@ -63,7 +63,7 @@
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="4" />
           <entry key="SourceMap" value="1" />
-          <entry key="TypeScript" value="4" />
+          <entry key="TypeScript" value="5" />
           <entry key="Vue.js" value="154" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="4" />
@@ -80,8 +80,8 @@
           <entry key="md" value="442" />
           <entry key="scss" value="133" />
           <entry key="sh" value="6" />
-          <entry key="txt" value="1171" />
-          <entry key="vue" value="22009" />
+          <entry key="txt" value="1191" />
+          <entry key="vue" value="22327" />
           <entry key="vuepress" value="26" />
         </counts>
       </usages-collector>
@@ -91,16 +91,16 @@
           <entry key="JSON" value="101" />
           <entry key="JavaScript" value="5089" />
           <entry key="Markdown" value="712" />
-          <entry key="PLAIN_TEXT" value="1203" />
+          <entry key="PLAIN_TEXT" value="1223" />
           <entry key="SCSS" value="133" />
-          <entry key="Vue.js" value="21997" />
+          <entry key="Vue.js" value="22315" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
           <entry key="PrettierLanguageServiceImpl" value="7" />
-          <entry key="TypeScriptServerServiceImpl" value="3" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -137,11 +137,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/table/table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="162" selection-end-column="10" />
+            <state relative-caret-position="324">
+              <caret line="141" column="35" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -158,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/table/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="522">
+              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -435,7 +444,7 @@
       <workItem from="1566260133155" duration="4430000" />
       <workItem from="1566282469705" duration="599000" />
       <workItem from="1566300265501" duration="13813000" />
-      <workItem from="1566368132745" duration="4504000" />
+      <workItem from="1566368132745" duration="6435000" />
     </task>
     <task id="LOCAL-00001" summary="制作图标并且生成链接">
       <created>1542647274165</created>
@@ -759,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566352369990</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="复制表格来固定表头">
+      <created>1566373329214</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1566373329214</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288885000" />
+    <option name="totallyTimeSpent" value="290816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -834,7 +850,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="复制test:unit命令， 方便travis运行防止报错" />
     <MESSAGE value="添加touch事件" />
     <MESSAGE value="添加前进后退两个按钮" />
     <MESSAGE value="添加测试用例" />
@@ -859,7 +874,8 @@
     <MESSAGE value="可以全选反选和半选" />
     <MESSAGE value="done:表格排序" />
     <MESSAGE value="done:表格loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="done:表格loading" />
+    <MESSAGE value="复制表格来固定表头" />
+    <option name="LAST_COMMIT_MESSAGE" value="复制表格来固定表头" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,13 +893,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/grid/col.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1818">
@@ -1179,8 +1188,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/table/demo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="522">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
@@ -1189,8 +1198,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/table/table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="162" selection-end-column="10" />
+        <state relative-caret-position="324">
+          <caret line="141" column="35" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>

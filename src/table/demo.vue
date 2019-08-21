@@ -25,13 +25,13 @@
             return {
                 currentPage: 1,
                 columns: [
-                    {text: '姓名', field: 'name'},
+                    {text: '姓名', field: 'name', width: 100},
                     {text: '分数', field: 'score'}
                 ],
                 dataSource: [
-                    {id: 1, name: '陈晓拉尼', score: 88, description: 'xxxxxxxxxxxxxx'},
-                    {id: 2, name: '陈晓拉尼', score: 99},
-                    {id: 3, name: '陈晓拉尼', score: 46, description: 'zzzzzzzzzzzzzz'},
+                    {id: 1, name: '陈晓拉尼1', score: 88, description: 'xxxxxxxxxxxxxx'},
+                    {id: 2, name: '陈晓拉尼2', score: 99},
+                    {id: 3, name: '陈晓拉尼3', score: 46, description: 'zzzzzzzzzzzzzz'},
                     {id: 4, name: '陈晓拉尼', score: 62, description: 'yyyyyyyyyyyyyy'},
                     {id: 5, name: '陈晓拉尼', score: 88, description: 'xxxxxxxxxxxxxx'},
                     {id: 6, name: '陈晓拉尼', score: 99},
