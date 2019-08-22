@@ -11,18 +11,19 @@ title: Cascader - Cascader
 
 ### 代码
 ```HTML
- <div>
-    <g-button>Button</g-button>
-    <g-button icon="settings" icon-position="right">Button</g-button>
-    <g-button :loading="true">Button</g-button>
-    <g-button disabled>Button</g-button>
- </div>
+<div style="padding: 20px;">
+    <g-cascader 
+        :source.sync="source" 
+        popover-height="200px"
+        :selected.sync="selected" 
+        :load-data="loadData"></g-cascader>
+</div>
 ```
 
 ### Attributes
 | 参数 | 说明 | 类型 | 默认值 |
 | ------ | ------ | ------ | ------ |
-| icon | 可设置icon | String |   无 |
-| icon-position | icon位置 | String | left [right]|
-| loading | 是否loading | Boolean | false |
-| disabled | 是否禁用 | Boolean | false |
+| source | 数据源 | Array |   [] |
+| popover-height | 下拉高度 | String | 无|
+| selected | 默认选中值 | Array | [] |
+| load-data | 加载函数 | Function | 无 |

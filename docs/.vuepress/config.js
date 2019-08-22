@@ -3,9 +3,10 @@ module.exports = {
     base: '/vueComponents/',
     description: '一些自己写的UI组件',
     themeConfig: {
-        sidebarDepth:0,// 禁用所有链接
+        sidebarDepth: 0,// 禁用所有链接
         nav: [
             {text: '主页', link: '/'},
+            {text: '博客', link: 'https://www.chenxiaolani.com/'},
             {text: 'Github', link: 'https://github.com/mywebc/vueComponents'},
         ],
         sidebar: [
@@ -21,16 +22,51 @@ module.exports = {
                 title: '组件',
                 collapsable: false,
                 children: [
-                    '/components/button',
-                    '/components/input',
-                    '/components/grid',
-                    '/components/layout',
-                    '/components/collapse',
-                    '/components/popover',
-                    '/components/tabs',
-                    '/components/toast',
-                    '/components/pager',
-                    '/components/cascader'
+                    {
+                        title: "基础",
+                        collapsable: false,
+                        children: [
+                            '/components/icon',
+                            '/components/button'
+                        ],
+                    },
+                    {
+                        title: "布局",
+                        collapsable: false,
+                        children: [
+                            '/components/grid',
+                            '/components/layout',
+                        ]
+                    },
+                    {
+                        title: "导航",
+                        collapsable: false,
+                        children: [
+                            '/components/nav',
+                            '/components/pager',
+                            '/components/slides',
+                            '/components/tabs',
+                            '/components/collapse',
+                        ]
+                    },
+                    {
+                        title: "提示",
+                        collapsable: false,
+                        children: [
+                            '/components/popover',
+                            '/components/toast',
+                        ]
+                    },
+                    {
+                        title: "数据",
+                        collapsable: false,
+                        children: [
+                            '/components/input',
+                            '/components/table',
+                            '/components/cascader',
+                        ]
+                    }
+
                 ]
             }
         ]

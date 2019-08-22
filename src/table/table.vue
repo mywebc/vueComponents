@@ -1,11 +1,13 @@
 <template>
-    <div class="g-table-wrapper" ref="wrapper">
+    <div class="g-table-wrapper" ref="wrapper" :style="`width:${computeTableWidth}px`">
         <div :style="{height:`${height}px`,overflow: 'auto'}" ref="tableWrapper">
             <table class="g-table" :class="bordered ,compact, striped" ref="table">
                 <thead>
                 <tr>
-                    <th :style="{width: '50px'}">
-                        <input type="checkbox" @change="onChangeAllItems" ref="allChecked"
+                    <th :style="{width: '50px'}" v-if="checkable">
+                        <input type="checkbox"
+                               @change="onChangeAllItems"
+                               ref="allChecked"
                                :checked="areAllItemsSelected"/>
                     </th>
                     <th :style="{width: '50px'}" v-if="numberVisible">#</th>
@@ -23,9 +25,12 @@
                 </thead>
                 <tbody>
                 <tr v-for="item, index in dataSource" :key="index">
-                    <td :style="{width: '50px'}"><input type="checkbox" @change="onChangeItem(item, index, $event)"
-                                                        :checked="isSelectedCheckbox(item)"
-                    /></td>
+                    <td :style="{width: '50px'}" v-if="checkable">
+                        <input
+                                type="checkbox"
+                                @change="onChangeItem(item, index, $event)"
+                                :checked="isSelectedCheckbox(item)"
+                        /></td>
                     <td :style="{width: '50px'}" v-if="numberVisible">{{index+1}}}</td>
                     <template v-for="column in columns">
                         <td :style="{width: column.width + 'px'}" :key="column.field">{{item[column.field]}}</td>
@@ -47,6 +52,14 @@
         name: "GOTable",
         components: {GIcon},
         props: {
+            FixedHeader: {
+                type: Boolean,
+                default: false
+            },
+            checkable: {
+                type: Boolean,
+                default: false
+            },
             height: {
                 type: [Number, String],
             },
@@ -129,20 +142,23 @@
             },
         },
         mounted() {
-            // 复制一个空的table
-            let table2 = this.$refs.table.cloneNode(false)
-            this.table2 = table2
-            table2.classList.add("g-table-copy")
-            // 获取head
-            let thead = this.$refs.table.children[0]
-            // 获取head高度
-            let {height} = thead.getBoundingClientRect()
-            // 给table赋值
-            this.$refs.tableWrapper.style.marginTop = height + 'px'
-            // 我们现在表格的高度多了一个head的高度
-            this.$refs.tableWrapper.style.height = this.height - height + 'px'
-            table2.appendChild(thead)
-            this.$refs.wrapper.appendChild(table2)
+            if (this.FixedHeader) {
+                // 复制一个空的table
+                let table2 = this.$refs.table.cloneNode(false)
+                this.table2 = table2
+                table2.classList.add("g-table-copy")
+                // 获取head
+                let thead = this.$refs.table.children[0]
+                thead.children[0].children[0].style.width = this.columns[0].width - 6 + "px";
+                // 获取head高度
+                let {height} = thead.getBoundingClientRect()
+                // 给table赋值
+                this.$refs.tableWrapper.style.marginTop = height + 'px'
+                // 我们现在表格的高度多了一个head的高度
+                this.$refs.tableWrapper.style.height = this.height - height + 'px'
+                table2.appendChild(thead)
+                this.$refs.wrapper.appendChild(table2)
+            }
         },
         computed: {
             // 计算当前选中的是否相等
@@ -160,6 +176,14 @@
                     }
                 }
                 return equal
+            },
+            // 计算表格宽度
+            computeTableWidth() {
+                let totalWidth = 0
+                this.columns.map(obj => {
+                    totalWidth = obj.width + totalWidth
+                })
+                return totalWidth
             }
         },
         watch: {
@@ -177,6 +201,8 @@
     }
 </script>
 <style scoped lang="scss">
+    @import "../../styles/var";
+
     $grey: #eee;
     @mixin spin {
         animation: spin 2s infinite linear;
@@ -271,9 +297,12 @@
             z-index: 2;
             top: 0;
             left: 0;
+            svg {
+                fill: $blue;
+            }
             &-inner {
-                width: 60px;
-                height: 60px;
+                width: 40px;
+                height: 40px;
                 animation: loadingSpan 2s linear infinite;
             }
         }

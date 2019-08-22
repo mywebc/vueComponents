@@ -203,7 +203,7 @@ export default {
         cursor: pointer;
       }
       &.active {
-        background: black;
+        background: #4a90e2;
         color: white;
         &:hover {
           cursor: default;
