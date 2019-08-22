@@ -34,7 +34,7 @@
             </template>
         </g-popover>
         <hr>
-        <g-popover trigger="click" >
+        <g-popover trigger="click">
             <template slot="content">
                 <div>popover内容</div>
             </template>
@@ -66,7 +66,6 @@
                 <g-button>click点我</g-button>
             </template>
         </g-popover>
-        <pre><code>{{content}}</code></pre>
     </div>
 </template>
 <script>
@@ -79,27 +78,7 @@
             'g-button': Button
         },
         data() {
-            return{
-                content: `
-                 <g-popover trigger="hover">
-            <template slot="content">
-                <div>popover内容</div>
-            </template>
-            <template>
-                <g-button>hover点我</g-button>
-            </template>
-        </g-popover>
-        <hr>
-        <g-popover trigger="click">
-            <template slot="content">
-                <div>popover内容</div>
-            </template>
-            <template>
-                <g-button>click点我</g-button>
-            </template>
-        </g-popover>
-                `.trim()
-            }
+            return {}
         }
     }
 </script>

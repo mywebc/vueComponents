@@ -64,7 +64,9 @@ export default {
     },
     onUpdateSelected(newSelected) {
       this.$emit("update:selected", newSelected);
+      // 最后一个元素
       let lastItem = newSelected[newSelected.length - 1];
+      // 找到children里指定id
       let simplest = (children, id) => {
         return children.filter(item => item.id === id)[0];
       };
@@ -119,7 +121,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "var";
+@import "../../styles/var";
 .cascader {
   display: inline-block;
   position: relative;

@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "var";
+@import "../../styles/var";
 .wrapper {
   font-size: $font-size;
   display: inline-flex;
@@ -57,11 +57,9 @@ export default {
     padding: 0 8px;
     font-size: inherit;
     &:hover {
-      border-color: $border-color;
+      border-color: $blue;
     }
     &:focus {
-      outline: none;
-      box-shadow: inset 0px 1px 3px $box-shadow-color;
     }
     &[disabled],
     &[readonly] {

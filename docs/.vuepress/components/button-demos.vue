@@ -1,27 +1,18 @@
 <template>
     <div>
-        <g-button>默认按钮</g-button>
-        <g-button icon="settings">默认按钮</g-button>
-        <g-button :loading="true">默认按钮</g-button>
-        <g-button disabled>默认按钮</g-button>
-        <pre><code>{{content}}</code></pre>
+        <g-button>Button</g-button>
+        <g-button icon="settings" icon-position="right">Button</g-button>
+        <g-button :loading="true">Button</g-button>
+        <g-button disabled>Button</g-button>
     </div>
 </template>
 <script>
     import Button from '../../../src/button/button'
+
     export default {
+        name: 'button-demos',
         components: {
             'g-button': Button
         },
-        data() {
-            return {
-                content: `
-<g-button>默认按钮</g-button>
-<g-button icon="settings">默认按钮</g-button>
-<g-button :loading="true">默认按钮</g-button>
-<g-button disabled>默认按钮</g-button>
-                `.trim()
-            }
-        }
     }
 </script>

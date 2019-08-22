@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="right" v-if="rightItems">
-      <gulu-cascader-items
+      <g-cascader-items
         ref="right"
         :items="rightItems"
         :height="height"
@@ -27,7 +27,7 @@
         :level="level + 1"
         :selected="selected"
         @update:selected="onUpdateSelected"
-      ></gulu-cascader-items>
+      ></g-cascader-items>
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@
 <script>
 import Icon from "../icon";
 export default {
-  name: "GOCascaderItems",
+  name: "GCascaderItems",
   components: { Icon },
   props: {
     items: {
@@ -85,7 +85,8 @@ export default {
       let copy = JSON.parse(JSON.stringify(this.selected));
       copy[this.level] = item;
       copy.splice(this.level + 1); // 一句话
-      this.$emit("update:selected", copy);
+        console.log(copy);
+        this.$emit("update:selected", copy);
     },
     onUpdateSelected(newSelected) {
       this.$emit("update:selected", newSelected);
@@ -95,7 +96,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "var";
+@import "../../styles/var";
 .cascaderItem {
   display: flex;
   align-items: flex-start;

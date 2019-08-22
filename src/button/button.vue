@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "var";
+@import "../../styles/var";
 
 .g-button {
   font-size: $font-size;
@@ -55,8 +55,13 @@ export default {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  /*cursor: pointer;*/
   &:hover {
-    border-color: $border-color-hover;
+    border-color: $blue;
+    color: $blue;
+    svg {
+      fill: $blue;
+    }
   }
   &:active {
     background-color: $button-active-bg;

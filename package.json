@@ -6,6 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "test:unit": "karma start",
     "test:unit:old": "vue-cli-service test:unit"
   },
@@ -29,7 +31,8 @@
     "sass-loader": "^7.1.0",
     "sinon": "^7.4.1",
     "sinon-chai": "^3.3.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.0.3"
   },
   "postcss": {
     "plugins": {

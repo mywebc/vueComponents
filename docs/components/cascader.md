@@ -1,12 +1,12 @@
 ---
-title: Button - 按钮
+title: Cascader - Cascader
 ---
 
-## Button-按钮
+## Cascader-Cascader
 
 ### 示例
 <ClientOnly>
-<button-demos/>
+<cascader-demos/>
 </ClientOnly>
 
 ### 代码
